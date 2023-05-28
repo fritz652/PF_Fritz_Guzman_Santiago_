@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
 
 html{
@@ -85,7 +87,13 @@ header .logo{
     font-size:x-large;
 }
 
-header .menu a{
+
+.menu  li {
+    position: relative;
+    float: left;
+}
+
+header .menu li a{
     color:var(--black);
     text-transform: uppercase;
     padding: 0 2rem;
@@ -93,7 +101,7 @@ header .menu a{
     transition: 0.4s;
 }
 
-header .menu a:nth-child(5) div{
+header .menu li:nth-child(5) a div{
     display: inline;
     padding: 0 10px;
     background-image: url("./assets/icons/shopping-cart.svg");
@@ -101,7 +109,7 @@ header .menu a:nth-child(5) div{
 }
 
 
-header .menu a:nth-child(6) div {
+header .menu li:nth-child(6) a div {
     display: inline;
     padding: 0 10px;
     background-image: url("./assets/icons/person-circle.svg");
@@ -154,12 +162,17 @@ header .look-menu{
         transition: 0.8s;
     }
 
-    header .menu a{
+    header .menu li {
+        width: 100%;
+    }
+
+
+    header .menu li a{
         display: block;
         padding: 2rem;
     }
 
-    header .menu a:hover{
+    header .menu li:hover{
     background: var(--white);
     /* opacity: 0.5; */
     }
@@ -174,8 +187,8 @@ header .look-menu{
         right: 0;
     }
 
-    header .menu a:nth-child(5) div,
-    header .menu a:nth-child(6) div{
+    header .menu li:nth-child(5) a div,
+    header .menu li:nth-child(6) a div{
         display: block;
         padding: 1.5rem;
         background-size: 210%;
@@ -514,6 +527,4 @@ body {
         'footer footer footer';
 
 } */
-
-
 
