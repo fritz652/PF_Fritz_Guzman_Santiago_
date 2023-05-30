@@ -1,4 +1,4 @@
-/* RESET */
+/*::::::::::::::::::: RESET::::::: */
 
 *{
     margin: 0;
@@ -16,14 +16,9 @@ body{
     background-color: var(--fondo);
 }
 
-/* img{
-    width: 100%;
-}
- */
 a{
     text-decoration: none;
 }
-
 
 /* VARIABLES */
 :root {
@@ -40,14 +35,15 @@ a{
     --emphasis:#E91E63;
     --sm: 14px;
     --md: 16px;
-    --lg: 18px;
-    --xl: 25px;
+    --lg: 20px;
+    --xl: 35px;
     --very-light-pink:#c7c7c7;
     --text-input-field: #f7f7f7;
 }
 
 h2{
     font-size: var(--lg);
+    font-weight: 900;
 }
 
 p{
@@ -64,7 +60,6 @@ h1 {
     font-size: 3rem;
     background-color: var(--fondo);
 }
-
 
 header{
     height: 100px;
@@ -86,7 +81,6 @@ header .logo{
     font-size:x-large;
 }
 
-
 .menu  li {
     position: relative;
     float: left;
@@ -102,17 +96,18 @@ header .menu li a{
 
 header .menu li:nth-child(5) a div{
     display: inline;
-    padding: 0 10px;
+    padding: 0 11px;
     background-image: url("./assets/icons/shopping-cart.svg");
     background-repeat: no-repeat round;
+    background-size: cover;
 }
-
 
 header .menu li:nth-child(6) a div {
     display: inline;
-    padding: 0 10px;
+    padding: 0 11px;
     background-image: url("./assets/icons/person-circle.svg");
     background-repeat: no-repeat round;
+    background-size: cover;
 }
 
 .look-menu,
@@ -195,10 +190,337 @@ header .look-menu{
     }
 }
 
-/* :::::IMAGENES:::::::: */
+/* ::::::::::::::::::::::::::::::: */
+/* :::::::::::MAIN INDEX:::::::: */
+/* :::::::::::::::::::::::::::::: */
+
+main{
+    /* min-height: calc(100vh - 600px); */ /* este código es el que posisiona el footer*/
+    padding: 0px 100px 0; /* Este si va */
+    justify-content: space-between;
+    text-align: center;
+    
+}
+/* .........Main: first-section-index.......... */
+.esp {
+    position: absolute;
+    top: 650px;
+    bottom: 0;
+    width: 350px;
+    right: 900px;
+}
+
+.container-info {
+    display: flex;
+    align-items: center;
+}
+
+.container-txt {
+    width: 50%;
+    padding-right:  35px;
+    /* ver si lo elimino las 2 sigeuintes lineas */
+    padding-top: 20px;
+    text-align: center;
+}
+
+.container-txt h1 {
+    font-size:  55px;
+    line-height:  70px;
+    font-weight:  600;
+    color: #303030;
+    margin-bottom:  25px;
+    text-transform: capitalize;
+}
+
+.container-txt p {
+    font-size: 16px;
+    color: #303030;
+    margin-bottom:  35px;
+} 
+
+.btn-1 {
+    display: inline-block;
+    background-color: #FF9F0D;
+    padding: 13px 30px;
+    border-radius: 25px;
+    color: #fff;
+    text-transform: capitalize;
+    box-shadow: 0  0 20px rgb(0, 0, 0, 0.2);
+    font-size: large;
+}
+
+.btn-1:hover{
+    background-color:#EE9003;
+}
+
+.container-img {
+    width: 50%;
+}
+
+.container-img img {
+    width: 650px;
+}
+/* .........Main: secund-section-index.......... */
+.info {
+    padding: 100px 100px 10px;
+    display: flex;
+    justify-content: space-between;
+    gap:45px
+}
+
+.info-1 {
+    width: 300px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.info-1 img {
+    width: 35px;
+}
+
+.info-1 h3 {
+    font-size: 18px;
+    color: #303030;
+    margin-bottom: 10px;
+}
+
+.info-1 p {
+    font-size:  16px;
+    color: #303030;
+}
+
+.nosotros {
+    position: relative;
+}
+
+.bg-2 {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 400px;
+    z-index: -1;
+}
+
+.nosotros-info {
+    display:  flex;
+    align-items: center;
+}
+
+.nosotros-img {
+    width: 50%;
+}
+
+.nosotros-img img {
+    width: 650px;
+}
+
+.nosotros-txt {
+    width: 50%;
+}
+
+.nosotros-txt span {
+    font-size:  16px;
+    color: #FF9F0D;
+    font-weight:  700;
+    margin-bottom: 25px;
+}
+
+.nosotros-txt h2 {
+    font-size:  45px;
+    color: #303030;
+    margin-bottom: 30px;
+}
+
+.nosotros-txt p {
+    font-size:  18px;
+    color: #303030;
+    margin-bottom: 50px;
+}
+/* .........Main: third-section-index............ */
+/* ..................nosotros.................... */
+main .cardsContainer{
+    display: grid;
+    gap: 5rem;
+    row-gap: 20rem;
+    grid-auto-rows:  22rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); /* Esta linea reemplaza algunas medias queries */ 
+    justify-content: center;
+}
+
+main .nosotros {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+main .nosotros .chefs {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10%;
+} 
+
+main .nosotros .chefs div:nth-child(1){
+    background-image: url("../assets/img/chef-1.png");
+}
+
+main .nosotros  .chefs div:nth-child(2){
+    background-image: url("../assets/img/chef-2.png");
+}
+
+main .nosotros  .chefs div:nth-child(3){
+    background-image: url("../assets/img/chef-3.png");
+}
+
+main .nosotros  .chefs div:nth-child(1),
+main .nosotros  .chefs div:nth-child(2),
+main .nosotros  .chefs div:nth-child(3){
+    padding: 10%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    
+}
+
+@media(max-width:768px) {
+    main .nosotros  .chefs div:nth-child(1),
+    main .nosotros  .chefs div:nth-child(2),
+    main .nosotros  .chefs div:nth-child(3){
+        padding: 20%;
+    }
+
+}
+/* ....MAIN-CARDS-INDEX.... */
+main .cardFood {
+    grid-column: span 2;
+    background-color: var(--white);
+    height: 300px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px rgb(161, 160, 160);
+    /* width: 300px; */
+}
+
+main .cardFood:hover {
+    background-color:var(--primary);
+    color: var(--white);
+    transition: 0.8s;
+}
+
+main  .cardFood .CardFood__img{
+    display: inline-block;
+    position: relative;
+    top:-80px;
+    height: 150px;
+    width:  150px;
+    background-image: url("../assets/img/plate-1.png");
+    background-repeat: no-repeat round;
+    background-size: 150px;
+}
+
+main .cardFood  div {
+    position: relative;
+    top: -7rem;
+    display: flex;
+    flex-direction: column;
+    gap:1rem
+}
+
+main  .cardFood div button {
+    color: var(--white);
+    font-weight: bold;
+    background-color: var(--primary);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border-style: none;
+    position: absolute;
+    left: 80%;
+    top: 100%;
+}
+
+main  .cardFood p:nth-child(3){
+    font-size: var(--xl);
+    position: absolute;
+    left: 10%;
+    top: 100%;
+}
+
+main  .cardFood div button,
+main  .cardFood p:nth-child(3){
+    margin-top: 4rem;
+}
+
+main  .cardFood div p button:hover,
+main  .cardFood div button:hover {
+    color: var(--primary);
+    font-weight: bold;
+    background-color: var(--white);
+}
+
+/* ::::::::::::::::::::::::::::: */
+/* ::::::::::::DESAYUNOS:::::::: */
+/* ::::::::::::::::::::::::::::: */
+
+.delivery {
+    padding-top: 100px;
+    justify-content: center;
+}
+
+main .delivery .delivery-img,
+main .delivery .delivery-contenido {
+    height: 300px;
+    width: 500px;
+    display: grid;
+    align-items: center;
+    text-align: left;
+}
+
+main .delivery .delivery-img {
+    background-image: url("../assets/img/delivery-gratis-desayuno.png");
+    background-repeat: no-repeat round;
+}
 
 
 
+.delivery h2 {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+/* :::section contactenos */
+
+.contactenos {
+    padding-top: 100px 0;
+    justify-content: center;
+}
+
+main .contactenos .contactenos-img,
+main .contactenos .contactenos-contenido {
+    height: 300px;
+    width: 500px;
+    display: grid;
+    align-items: center;
+    text-align: right;
+}
+
+.center-rigth {
+    padding-right: 0;
+    
+}
+
+main .contactenos .contactenos-img {
+    background-image: url("../assets/img/contactanos-gratis.png");
+    background-repeat: no-repeat round;
+}
+
+
+
+.delivery h2 {
+    font-size: 32px;
+    line-height: 40px;
+}
 
 /* :::::::::::::::REGISTRO::::::::::::: */
 
@@ -222,8 +544,6 @@ header .look-menu{
     width: 300px;
 
 }
-
-
 
 .title__register{
     font-size:var(--lg);
@@ -285,16 +605,6 @@ header .look-menu{
 }
 
 /* ::::::FOOTER:::::::: */
-
-/* footer{
-    padding: 20px;
-    background: var(--black);
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: white;
-} */
-
 
  hr {
     border: 1px solid #EEE
@@ -384,4 +694,7 @@ body {
         'footer footer footer';
 
 } */
+
+
+
 
