@@ -132,7 +132,7 @@ header .look-menu{
 }
 
 /* RSPONSIVE MENU*/
-@media(max-width:768px) {
+@media(max-width:900px) {
     /* HEADER */
     h1 {
         font-size:x-large;
@@ -260,8 +260,47 @@ main{
 .container-img img {
     width: 650px;
 }
+
+
+@media (max-width:992px) {
+    .container-txt h1 {
+        font-size: 45px;
+    }
+
+    .container-img img {
+        width: 500px;
+    }
+}
+
+@media (max-width:768px) {
+
+    .container-img img {
+        width: 350px;
+    }
+
+    
+}
+
+
+@media (max-width: 567px){
+    .container-info {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .container-txt {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    }
+    .container-img {
+    width: 100%;
+    }
+}
+
+
 /* .........Main: secund-section-index.......... */
-.info {
+.secund-section-index {
     padding: 100px 100px 10px;
     display: flex;
     justify-content: space-between;
@@ -293,14 +332,6 @@ main{
 
 .nosotros {
     position: relative;
-}
-
-.bg-2 {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 400px;
-    z-index: -1;
 }
 
 .nosotros-info {
