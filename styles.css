@@ -258,7 +258,8 @@ main{
 }
 
 .container-img img {
-    width: 650px;
+    /* width: 650px; */
+    width: 100%;
 }
 
 
@@ -282,7 +283,7 @@ main{
     }
 
     .container-img img {
-        width: 350px;
+        width: 90%
     }
     
 }
@@ -352,11 +353,13 @@ main{
 }
 
 .nosotros-img img {
-    width: 650px;
+    /* width: 650px; */
+    width: 100%;
 }
 
 .nosotros-txt {
     width: 50%;
+    padding-left:  35px;
 }
 
 .nosotros-txt span {
@@ -423,20 +426,57 @@ main .nosotros  .chefs div:nth-child(3){
     
 }
 
-@media(max-width:768px) {
-    main .nosotros  .chefs div:nth-child(1),
-    main .nosotros  .chefs div:nth-child(2),
-    main .nosotros  .chefs div:nth-child(3){
-        padding: 20%;
-    }
-}
-
     @media(max-width:768px) {
     .secund-section-index {
         padding: 0;
         display: grid;
         justify-content: center;
 
+    }
+}
+
+
+@media (max-width:992px) {
+    .nosotros-txt h2 {
+        font-size: 45px;
+    }
+
+    .nosotros-img img {
+        width: 400px;
+    }
+}
+
+@media (max-width:768px) {
+/*     main {
+        padding: 0px 30px;
+    } */
+    .nosotros-info {
+        flex-direction: column;
+        /* padding: 30px; */
+    }
+
+    .nosotros-img img {
+        width: 100%;
+    }
+    
+}
+
+
+@media (max-width: 567px){
+    .nosotros-txt h2 {
+        font-size: 40px;
+        white-space: pre-line;
+        width: 100%;
+    }
+
+
+    .nosotros-txt {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    }
+    .nosotros-img {
+    width: 100%;
     }
 }
 /* ....MAIN-CARDS-INDEX.... */
