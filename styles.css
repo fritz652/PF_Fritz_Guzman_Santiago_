@@ -273,20 +273,28 @@ main{
 }
 
 @media (max-width:768px) {
+    main {
+        padding: 0px 30px;
+    }
+    .container-info {
+        flex-direction: column;
+        /* padding: 30px; */
+    }
 
     .container-img img {
         width: 350px;
     }
-
     
 }
 
 
 @media (max-width: 567px){
-    .container-info {
-        flex-direction: column;
-        padding: 30px;
+    .container-txt h1 {
+        font-size: 40px;
+        white-space: pre-line;
+        width: 100%;
     }
+
 
     .container-txt {
     width: 100%;
@@ -421,7 +429,15 @@ main .nosotros  .chefs div:nth-child(3){
     main .nosotros  .chefs div:nth-child(3){
         padding: 20%;
     }
+}
 
+    @media(max-width:768px) {
+    .secund-section-index {
+        padding: 0;
+        display: grid;
+        justify-content: center;
+
+    }
 }
 /* ....MAIN-CARDS-INDEX.... */
 main .cardFood {
