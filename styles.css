@@ -262,7 +262,6 @@ main{
     width: 100%;
 }
 
-
 @media (max-width:992px) {
     .container-txt h1 {
         font-size: 45px;
@@ -288,14 +287,12 @@ main{
     
 }
 
-
 @media (max-width: 567px){
     .container-txt h1 {
         font-size: 40px;
         white-space: pre-line;
         width: 100%;
     }
-
 
     .container-txt {
     width: 100%;
@@ -306,7 +303,6 @@ main{
     width: 100%;
     }
 }
-
 
 /* .........Main: secund-section-index.......... */
 .secund-section-index {
@@ -550,6 +546,115 @@ main  .cardFood div button:hover {
 /* ::::::::::::DESAYUNOS:::::::: */
 /* ::::::::::::::::::::::::::::: */
 
+
+/* ..con boostrap.. */
+
+.img-area img {
+    display: inline-block;
+    position: relative;
+    bottom: -60px;
+    height: 150px;
+    width:  150px;
+}
+
+
+.img-text {
+    /* padding-top: 80px;
+    grid-column: span 2;
+    background-color: var(--white);
+    height: 300px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px rgb(161, 160, 160);
+ */
+    background-color: var(--white);
+    padding-top: 80px;
+    width: 100%;
+    height: 300px;
+    display: block;
+    text-align: center;
+    /* padding: 40% 50%; */
+    border-radius: 15px;
+}
+
+.img-text h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.img-text p {
+    font-size:  14px;
+}
+
+.simple-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.carousel-indicators {
+    left: 0;
+    top: auto;
+    bottom:  -70px;
+}
+
+.col-md-12 .slide .carousel-indicators button{
+    background:#ffffff;
+    border-radius:  50%;
+   /*  width: 5px;
+    height: 5px; */
+    
+}
+
+.col-md-12 .slide .carousel-indicators .active {
+    background: var(--primary);
+}
+
+.circle-button {
+    background: #FF9F0D;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+
+}
+
+.carousel-control-prev-icon {
+    position: relative;
+    top: 8px;
+    left: -2px;
+}
+
+.carousel-control-next-icon {
+    position: relative;
+    top: 8px;
+    left: 2px;
+}
+
+.carousel-control-prev{
+    left: -25px;
+}
+
+.carousel-control-next{
+    right: -25px;
+}
+
+.carousel-control-next,
+.carousel-control-prev{
+    height: 600px;
+    width: 5%;
+}
+
+
+@media (max-width: 567px) {
+    .carousel-control-next,
+    .carousel-control-prev{
+    width: 20%;
+    }
+    .col-md-4:not(:first-child){
+        display: none;
+    }
+}
+/* ..sin boostrap.. */
+
 .delivery {
     padding-top: 100px;
     justify-content: center;
@@ -761,21 +866,6 @@ footer p{
 
 
 @media (max-width: 750px) {
-    /* .footer {
-        padding: 30px;
-        position: relative;
-    }
-
-    .footer-links {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .Socials {
-        margin-bottom: 25px;
-    } */
-
     .footer-links {
         flex-direction: column;
         align-items: center;
@@ -785,7 +875,7 @@ footer p{
     .link-redes{grid-area: redes;}
     .link-nosotros{grid-area: nosotros;}
     .link-guia{grid-area: guia;}
-    .link-escuchamos{grid-area: escuchanos;}
+    .link-escuchamos{grid-area: escuchamos;}
 
 
     .footer-links {
@@ -797,7 +887,7 @@ footer p{
         'redes redes redes redes'
         'nosotros nosotros nosotros nosotros'
         'guia guia guia guia'
-        'escuchanos escuchanos escuchanos escuchanos';
+        'escuchamos escuchamos escuchamos escuchamos';
     }
 }
 
