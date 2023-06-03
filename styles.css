@@ -892,33 +892,3 @@ footer p{
 }
 
 
-
-/*::::::::::::: GRID LAYAOUT ::::::::::::: */
-
-/* Este grid layaut lo ocmento porque cuando lo ejecuto el 
-footer se deforma no obstante  aplico medias queries  flex y grid 
- de manera mas local  que por componente */
-
-/* header { grid-area: header; }
-h1 { grid-area: title; }
-section { grid-area: main; }
-footer { grid-area: footer; }
-
-
-body {
-    height: 100vh;
-    display: grid;
-    grid-template-columns:auto auto auto ;
-    grid-template-rows: 100px 1fr 1fr 300px;
-
-    grid-template-areas:
-        'header header header'
-        'title title title'
-        'main main  main'
-        'footer footer footer';
-
-} */
-
-
-
-
