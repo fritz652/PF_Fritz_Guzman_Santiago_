@@ -497,7 +497,7 @@ main  .cardFood .CardFood__img{
     position: relative;
     top:-80px;
     height: 150px;
-    width:  150px;
+    width:  100px;
     background-image: url("../assets/img/plate-1.png");
     background-repeat: no-repeat round;
     background-size: 150px;
@@ -541,9 +541,8 @@ main  .cardFood p:nth-child(3){
 
 main  .cardFood div p button:hover,
 main  .cardFood div button:hover {
-    color: var(--primary);
     font-weight: bold;
-    background-color: var(--white);
+    background-color: #EE9003;
 }
 
 /* ::::::::::::::::::::::::::::: */
@@ -764,22 +763,28 @@ main .contactenos .contactenos-img {
     background-color: var(--text-input-field);
     border:none;
     border-radius: 8px;
-    height: 30px;
+    height: 50px;
     font-size: var(--md);
     padding: 6px;
     margin-bottom: 12px;
 }
 
+
 .primary-button{
     background-color: var(--primary);
     border-radius: 8px;
     border:none;
-    color:var(--black) ;
+    color:#fff ;
     width: 100%;
     cursor: pointer;
     font-size: var(--md);
     font-weight: bold;
     height: 50px;
+}
+
+.primary-button:hover{
+    color: #fff;
+    background: #FF9F0D;
 }
 
 .login-button{
@@ -975,25 +980,19 @@ footer p{
             font-size: var(--md);
             font-weight: bold;
         }
+
+        .img-text .primary-button{
+            width: 80%;
+        }
     
- /*    .primary-button{
-        background-color: var(--primary);
-        border-radius: 8px;
-        border: none;
-        color: var(--white);
-        width: 100%;
-        cursor: pointer;
-        font-size: var(--md);
-        font-weight: bold;
-        height: 50px;
-    } */
-    
+
     @media (max-width:640px){
         .product-detail{
             width: 100%;
         }
     }
 
+    
 
     /* :::::PROBANDO::::: */
 
@@ -1019,15 +1018,16 @@ footer p{
     .direction .top-30 {
         width: 50%;
     }
+    
     .direction .bottom-80 {
         width: 50%;
         border-radius: 30px;
-        background: red;
     }
 
     .grid-row .top-30 .send-button {
         width: 100px;
     }
+
     button {
         font-size: 16px;
     }
