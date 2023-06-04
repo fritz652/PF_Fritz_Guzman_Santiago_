@@ -221,6 +221,7 @@ main{
     /* ver si lo elimino las 2 sigeuintes lineas */
     padding-top: 20px;
     text-align: center;
+    font-size: 10px;
 }
 
 .container-txt h1 {
@@ -971,6 +972,13 @@ footer p{
             align-items: center;
         }
         
+
+        .carousel-item .row .col-md-4 .single-box .img-text a p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         .shopping-cart p:nth-child(2){
             color: var(--very-light-pink);
         }
