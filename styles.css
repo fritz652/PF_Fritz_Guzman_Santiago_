@@ -76,7 +76,7 @@ header{
 
 header .logo{
     text-transform: uppercase;
-    color:  var(--black);
+    color:  var(--primary);
     font-weight: 200;
     font-size:x-large;
 }
@@ -204,7 +204,7 @@ main{
 /* .........Main: first-section-index.......... */
 .esp {
     position: absolute;
-    top: 650px;
+    top: 850px;
     bottom: 0;
     width: 350px;
     right: 900px;
@@ -385,6 +385,7 @@ main .cardsContainer{
     grid-auto-rows:  22rem;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); /* Esta linea reemplaza algunas medias queries */ 
     justify-content: center;
+    padding-bottom: 100px;
 }
 
 main .nosotros {
@@ -485,11 +486,11 @@ main .cardFood {
     /* width: 300px; */
 }
 
-main .cardFood:hover {
+/* main .cardFood:hover {
     background-color:var(--primary);
     color: var(--white);
     transition: 0.8s;
-}
+} */
 
 main  .cardFood .CardFood__img{
     display: inline-block;
@@ -503,37 +504,40 @@ main  .cardFood .CardFood__img{
 }
 
 main .cardFood  div {
+    padding: 0 30px;
     position: relative;
     top: -7rem;
     display: flex;
     flex-direction: column;
-    gap:1rem
+    gap:1rem;
+    align-items: center;
+    
 }
 
 main  .cardFood div button {
     color: var(--white);
     font-weight: bold;
     background-color: var(--primary);
-    border-radius: 50%;
+    border-radius: 5px;
     height: 40px;
-    width: 40px;
+    width: 250px;
     border-style: none;
-    position: absolute;
+    /* position: absolute;
     left: 80%;
-    top: 100%;
+    top: 100%; */
 }
 
 main  .cardFood p:nth-child(3){
     font-size: var(--xl);
-    position: absolute;
+   /*  position: absolute;
     left: 10%;
-    top: 100%;
+    top: 100%; */
 }
-
+/* 
 main  .cardFood div button,
 main  .cardFood p:nth-child(3){
     margin-top: 4rem;
-}
+} */
 
 main  .cardFood div p button:hover,
 main  .cardFood div button:hover {
@@ -559,13 +563,6 @@ main  .cardFood div button:hover {
 
 
 .img-text {
-    /* padding-top: 80px;
-    grid-column: span 2;
-    background-color: var(--white);
-    height: 300px;
-    border-radius: 30px;
-    box-shadow: 5px 5px 5px rgb(161, 160, 160);
- */
     background-color: var(--white);
     padding-top: 80px;
     width: 100%;
@@ -586,6 +583,9 @@ main  .cardFood div button:hover {
     font-size:  14px;
 }
 
+.img-text .price {
+    font-size: 30px;
+}
 .simple-box {
     position: relative;
     margin-bottom: 30px;
@@ -644,7 +644,7 @@ main  .cardFood div button:hover {
 }
 
 
-@media (max-width: 567px) {
+@media (max-width: 760px) {
     .carousel-control-next,
     .carousel-control-prev{
     width: 20%;
@@ -892,3 +892,209 @@ footer p{
 }
 
 
+
+/* :::::DE PRUEBA:::::: */
+
+* {box-sizing: border-box}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .deletebtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+  background-color: #f44336;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+  padding: 16px;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
+    width: 100%;
+  }
+}
+
+
+
+
+/* :::::probando my order::: */
+
+
+.product-detail{
+    padding: 24px;
+    box-sizing: border-box;
+    }
+    
+    .title-container{
+        display: flex;
+    }
+    
+    .title-container img{ 
+        transform: rotate(180deg);
+        margin-right: 14px;
+    }
+    
+    .title{
+        font-size: var(--lg);
+        font-weight: bold;
+    }
+    .order{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap:16px;
+        align-items: center;
+        background-color: var(--text-input-field);
+        margin-bottom: 24px;
+        border-radius: 8px;
+        padding: 0 24px;
+        }
+        
+    .order p:nth-child(1){
+            display: flex;
+            flex-direction: column;
+    }
+    
+    .order p span:nth-child(1){
+        font-size: var(--md);
+        font-weight: bold;
+    }
+        
+        .order p:nth-child(2){
+            text-align: end;
+            font-weight: bold;
+        }
+    
+        .shopping-cart {
+            display: grid;
+            grid-template-columns: auto 1fr auto auto;
+            gap:16px;
+            margin-bottom: 24px;
+            align-items: center;
+        }
+        
+        .shopping-cart figure{
+            margin:0
+        }
+    
+        .shopping-cart figure img{
+            width: 70px;
+            height: 70px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+    
+        .shopping-cart {
+            display: grid;
+            grid-template-columns: auto 1fr auto auto;
+            gap:16px;
+            margin-bottom: 24px;
+            align-items: center;
+        }
+        
+        .shopping-cart p:nth-child(2){
+            color: var(--very-light-pink);
+        }
+        
+        
+        .shopping-cart p:nth-child(3){
+            font-size: var(--md);
+            font-weight: bold;
+        }
+    
+    .primary-button{
+        background-color: var(--hospital-green);
+        border-radius: 8px;
+        border: none;
+        color: var(--white);
+        width: 100%;
+        cursor: pointer;
+        font-size: var(--md);
+        font-weight: bold;
+        height: 50px;
+    }
+    
+    @media (max-width:640px){
+        .product-detail{
+            width: 100%;
+        }
+    }
