@@ -28,54 +28,71 @@
             </label>
         </nav>
     </header>
-    <main>
-        <h2> <span>Logo carrito</span> Mi carrito</h2>
-        <aside class="product-detail">
-            <div class="title-container">
-                <img src="./icons/flechita.svg" alt="arrow">
-                <p class="title">Mi orden</p>
-            </div>
-            <div class="my-order-content">
-                <div class="shopping-cart">
-                    <figure>
-                        <img src="../assets/img/plate-2.png" alt="biker">
-                    </figure>
-                    <p>bistec con ensalada</p>
-                    <p>S/. 10.00</p>
-                    <img src="./icons/icon_close.png" alt="close">
+        <main class="main-shopping">
+            <aside class="product-detail">
+                <div class="title-container">
+                    <img src="./icons/flechita.svg" alt="arrow">
+                    <p class="title">Mi orden</p>
                 </div>
+                <div class="my-order-content">
+                    <div class="shopping-cart">
+                        <figure>
+                            <img src="../assets/img/plate-2.png" alt="biker">
+                        </figure>
+                        <p>bistec con ensalada</p>
+                        <p>S/. 10.00</p>
+                        <img src="./icons/icon_close.png" alt="close">
+                    </div>
+            
+                    <div class="shopping-cart">
+                        <figure>
+                            <img src="../assets/img/plate-3.png" alt="biker">
+                        </figure>
+                        <p>Tallarin saltado</p>
+                        <p>S/. 10.00</p>
+                        <img src="./icons/icon_close.png" alt="close">
+                    </div>
+            
+                    <div class="shopping-cart">
+                        <figure>
+                            <img src="../assets/img/plate-4.png" alt="biker">
+                        </figure>
+                        <p>Tayarin a la boloñesao</p>
+                        <p>S/ 10.00</p>
+                        <img src="./icons/icon_close.png" alt="close">
+                    </div>
         
-                <div class="shopping-cart">
-                    <figure>
-                        <img src="../assets/img/plate-3.png" alt="biker">
-                    </figure>
-                    <p>Tallarin saltado</p>
-                    <p>S/. 10.00</p>
-                    <img src="./icons/icon_close.png" alt="close">
-                </div>
+                    <div class="order">
+                        <p>
+                            <span>Total</span>
+                        </p>
+                        <p>S/. 30.00</p>
+                    </div>
         
-                <div class="shopping-cart">
-                    <figure>
-                        <img src="../assets/img/plate-4.png" alt="biker">
-                    </figure>
-                    <p>Tayarin a la boloñesao</p>
-                    <p>S/ 10.00</p>
-                    <img src="./icons/icon_close.png" alt="close">
+                    <button class="primary-button button-checkout">
+                        Checkout
+                    </button>
                 </div>
-    
-                <div class="order">
-                    <p>
-                        <span>Total</span>
-                    </p>
-                    <p>S/. 30.00</p>
+            </aside>
+            <section class="grid-row">
+                <div  class="top-30 content-padding">
+                    <div >
+                        <input type="password" id="password" placeholder="Escribe tu direción aquí" class="input input-password">
+                    </div>
+                    <input type="submit" value="Enviar" class="primary-button send-button">
                 </div>
-    
-                <button class="primary-button">
-                    Checkout
-                </button>
-            </div>
-        </aside>
-    </main>
+                <div class="botton-80">
+                    <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31209.872818292908!2d-77.01578795351793!3d-12.096119728024826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7d19478c6bf%3A0xb53809bf8f8b06c8!2sSan%20Borja!5e0!3m2!1ses-419!2spe!4v1685841408652!5m2!1ses-419!2spe" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+        </main>
+
+    <!-- ::::::::::::PROBANDO::::::::::::::: -->    
+
+
+    <!-- js boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <!-- js app -->
 </body>
 </html>

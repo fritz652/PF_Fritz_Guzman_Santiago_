@@ -770,7 +770,7 @@ main .contactenos .contactenos-img {
     margin-bottom: 12px;
 }
 
-.form .primary-button{
+.primary-button{
     background-color: var(--primary);
     border-radius: 8px;
     border:none;
@@ -892,14 +892,7 @@ footer p{
 }
 
 
-
-/* :::::DE PRUEBA:::::: */
-
-
-
-
-
-/* :::::probando my order::: */
+/* :::::MY ORDER::: */
 
 
 .product-detail{
@@ -983,8 +976,8 @@ footer p{
             font-weight: bold;
         }
     
-    .primary-button{
-        background-color: var(--hospital-green);
+ /*    .primary-button{
+        background-color: var(--primary);
         border-radius: 8px;
         border: none;
         color: var(--white);
@@ -993,10 +986,53 @@ footer p{
         font-size: var(--md);
         font-weight: bold;
         height: 50px;
-    }
+    } */
     
     @media (max-width:640px){
         .product-detail{
             width: 100%;
         }
+    }
+
+
+    /* :::::PROBANDO::::: */
+
+    .main-shopping {
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 16px;
+        margin:16px;
+        
+    }
+    .grid-row {
+        display: grid;
+        border-radius: 8px;
+    }
+
+    .grid-row .content-padding {
+        padding: 5% 15%;
+        display: flex;
+        gap: 30px;
+    }
+    
+    .direction .top-30 {
+        width: 50%;
+    }
+    .direction .bottom-80 {
+        width: 50%;
+        border-radius: 30px;
+        background: red;
+    }
+
+    .grid-row .top-30 .send-button {
+        width: 100px;
+    }
+    button {
+        font-size: 16px;
+    }
+    
+    #map {
+        height: 400px;
+        width: 100%;
     }
