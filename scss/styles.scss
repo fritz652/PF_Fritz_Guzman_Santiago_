@@ -57,7 +57,7 @@
     font-size: var(--lg);
   }
   
-  /*::::::::::::: HEADER::::::::::::: */
+  /*:::::::::::::  HEADER  ::::::::::::: */
   header {
     height: 100px;
     background: var(--fondo);
@@ -65,130 +65,180 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  header .logo {
-    text-transform: uppercase;
-    color: var(--primary);
-    font-weight: 200;
-    font-size: x-large;
-  }
-  header .menu li {
-    position: relative;
-    float: left;
-  }
-  header .menu li a {
-    color: var(--black);
-    text-transform: uppercase;
-    padding: 0 2rem;
-    font-size: var(--lg);
-    transition: 0.4s;
-  }
-  
-  header .menu li:nth-child(5) a div {
-    display: inline;
-    padding: 0 11px;
-    background-image: url("../assets/icons/shopping-cart.svg");
-    background-repeat: no-repeat round;
-    background-size: cover;
-  }
-  
-  header .menu li:nth-child(6) a div {
-    display: inline;
-    padding: 0 11px;
-    background-image: url("../assets/icons/person-circle.svg");
-    background-repeat: no-repeat round;
-    background-size: cover;
-  }
-  
-  .look-menu,
-  .hide-menu {
-    font-size: 3rem;
-    display: none;
-    transition: 0.4s;
-  }
-  
-  header .look-menu {
-    order: 1;
-  }
-  
-  .menu a:hover,
-  .look-menu:hover,
-  .hide-menu:hover {
-    color: var(--primary);
-  }
-  
-  #check {
-    display: none;
-  }
-  
-  /* RSPONSIVE MENU*/
-  @media (max-width: 900px) {
-    /* HEADER */
-    h1 {
-      font-size: x-large;
+    .logo{
+        text-transform: uppercase;
+        color: var(--primary);
+        font-weight: 200;
+        font-size: x-large;
     }
-    .look-menu,
-    .hide-menu {
-      display: block;
+
+    #check {
+      display: none;
+        &:checked ~ .menu {
+          @media (max-width:900px) {
+            right: 0;
+          }
+        }
     }
-    header .menu {
-      position: fixed;
-      width: 100%;
-      height: 108vh;
-      background: var(--primary);
-      right: -100%;
-      top: 0;
-      text-align: center;
-      padding: 8rem 0;
-      z-index: 100;
-      transition: 0.8s;
+
+    .look-menu {
+        order: 1;
+        font-size: 3rem;
+        display: none;
+        transition: 0.4s;
+
+        &:hover {
+          color: var(--primary);
+        }
+        @media (max-width: 900px) {
+          display: block;
+        } 
     }
-    header .menu li {
-      width: 100%;
+
+    .menu {
+      li {
+          position: relative;
+          float: left;
+
+          a {
+              color: var(--black);
+              text-transform: uppercase;
+              padding: 0 2rem;
+              font-size: var(--lg);
+              transition: 0.4s;
+
+              &:hover {
+                color: var(--primary);
+              }
+
+              @media (max-width:900px) {
+                display: block;
+                padding: 2rem;
+              }
+            }
+          .hide-menu {
+            &:hover {
+              color: var(--primary);
+            }
+          }
+          @media (max-width:900px) {
+            width: 100%;
+            & :hover {
+              background: var(--white);
+            }
+          }
+          
+      }
+      li:nth-child(5) {
+          a {
+              div {
+                  display: inline;
+                  padding: 0 11px;
+                  background-image: url("../assets/icons/shopping-cart.svg");
+                  background-repeat: no-repeat round;
+                  background-size: cover;
+            }
+            @media (max-width:900px) {
+              display: block;
+              padding: 1.5rem;
+              background-size: 210%;
+              background-position-x: center;
+            }
+          }
+      }
+      li:nth-child(6) {
+          a {
+              div {
+                  display: inline;
+                  padding: 0 11px;
+                  background-image: url("../assets/icons/person-circle.svg");
+                  background-repeat: no-repeat round;
+                  background-size: cover;
+                }
+          }
+          @media (max-width:900px) {
+            display: block;
+            padding: 1.5rem;
+            background-size: 210%;
+            background-position-x: center;
+          }
+      }
+      .hide-menu {
+        font-size: 3rem;
+        display: none;
+        transition: 0.4s;
+        
+        @media (max-width:900px) {
+          display: block;
+          position: absolute;
+          top: 4rem;
+          right: 4rem;
+          
+        }
+      }
+      
+      @media (max-width:900px){
+        position: fixed;
+        width: 100%;
+        height: 108vh;
+        background: var(--primary);
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 8rem 0;
+        z-index: 100;
+        transition: 0.8s;
+      }
     }
-    header .menu li a {
-      display: block;
-      padding: 2rem;
+}
+
+/* :::::::::::::  MAIN  :::::::::::::::: */
+  main {
+     /* min-height: calc(100vh - 600px); */ /* este código es el que posisiona el footer*/
+    padding: 0px 100px 0; 
+    justify-content: space-between;
+    text-align: center;
+    .first-section-index{
+      .esp {
+        position: absolute;
+        top: 850px;
+        bottom: 0;
+        width: 350px;
+        right: 900px;
+      } 
+      .container-info {
+        .container-txt {
+          @media (max-width: 900px) {
+            font-size: x-large;
+          }
+        }
+      }
     }
-    header .menu li:hover {
-      background: var(--white);
-      /* opacity: 0.5; */
+    .secund-section-index{
+      
     }
-    .menu .hide-menu {
-      position: absolute;
-      top: 4rem;
-      right: 4rem;
+    .third-section-index{
+
     }
-    #check:checked ~ .menu {
-      right: 0;
+    .fourth-section-index{
     }
-    header .menu li:nth-child(5) a div,
-    header .menu li:nth-child(6) a div {
-      display: block;
-      padding: 1.5rem;
-      background-size: 210%;
-      background-position-x: center;
+    .fifth-section-index{
+
     }
+}
+
+/* ::::::::::::: FOOTER  ::::::::::::::: */
+  footer {
+
   }
+
   /* ::::::::::::::::::::::::::::::: */
   /* :::::::::::MAIN INDEX:::::::: */
   /* :::::::::::::::::::::::::::::: */
-  main {
-    /* min-height: calc(100vh - 600px); */ /* este código es el que posisiona el footer*/
-    padding: 0px 100px 0; /* Este si va */
-    justify-content: space-between;
-    text-align: center;
-  }
-  
+    
   /* .........Main: first-section-index.......... */
-  .esp {
-    position: absolute;
-    top: 850px;
-    bottom: 0;
-    width: 350px;
-    right: 900px;
-  }
-  
+
+ 
   .container-info {
     display: flex;
     align-items: center;

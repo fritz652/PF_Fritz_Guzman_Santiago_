@@ -57,7 +57,7 @@ p {
   font-size: var(--lg);
 }
 
-/*::::::::::::: HEADER::::::::::::: */
+/*:::::::::::::  HEADER  ::::::::::::: */
 header {
   height: 100px;
   background: var(--fondo);
@@ -66,19 +66,38 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
 header .logo {
   text-transform: uppercase;
   color: var(--primary);
   font-weight: 200;
   font-size: x-large;
 }
-
+header #check {
+  display: none;
+}
+@media (max-width: 900px) {
+  header #check:checked ~ .menu {
+    right: 0;
+  }
+}
+header .look-menu {
+  order: 1;
+  font-size: 3rem;
+  display: none;
+  transition: 0.4s;
+}
+header .look-menu:hover {
+  color: var(--primary);
+}
+@media (max-width: 900px) {
+  header .look-menu {
+    display: block;
+  }
+}
 header .menu li {
   position: relative;
   float: left;
 }
-
 header .menu li a {
   color: var(--black);
   text-transform: uppercase;
@@ -86,7 +105,26 @@ header .menu li a {
   font-size: var(--lg);
   transition: 0.4s;
 }
-
+header .menu li a:hover {
+  color: var(--primary);
+}
+@media (max-width: 900px) {
+  header .menu li a {
+    display: block;
+    padding: 2rem;
+  }
+}
+header .menu li .hide-menu:hover {
+  color: var(--primary);
+}
+@media (max-width: 900px) {
+  header .menu li {
+    width: 100%;
+  }
+  header .menu li :hover {
+    background: var(--white);
+  }
+}
 header .menu li:nth-child(5) a div {
   display: inline;
   padding: 0 11px;
@@ -94,7 +132,14 @@ header .menu li:nth-child(5) a div {
   background-repeat: no-repeat round;
   background-size: cover;
 }
-
+@media (max-width: 900px) {
+  header .menu li:nth-child(5) a {
+    display: block;
+    padding: 1.5rem;
+    background-size: 210%;
+    background-position-x: center;
+  }
+}
 header .menu li:nth-child(6) a div {
   display: inline;
   padding: 0 11px;
@@ -102,38 +147,28 @@ header .menu li:nth-child(6) a div {
   background-repeat: no-repeat round;
   background-size: cover;
 }
-
-.look-menu,
-.hide-menu {
+@media (max-width: 900px) {
+  header .menu li:nth-child(6) {
+    display: block;
+    padding: 1.5rem;
+    background-size: 210%;
+    background-position-x: center;
+  }
+}
+header .menu .hide-menu {
   font-size: 3rem;
   display: none;
   transition: 0.4s;
 }
-
-header .look-menu {
-  order: 1;
-}
-
-.menu a:hover,
-.look-menu:hover,
-.hide-menu:hover {
-  color: var(--primary);
-}
-
-#check {
-  display: none;
-}
-
-/* RSPONSIVE MENU*/
 @media (max-width: 900px) {
-  /* HEADER */
-  h1 {
-    font-size: x-large;
-  }
-  .look-menu,
-  .hide-menu {
+  header .menu .hide-menu {
     display: block;
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
   }
+}
+@media (max-width: 900px) {
   header .menu {
     position: fixed;
     width: 100%;
@@ -146,52 +181,32 @@ header .look-menu {
     z-index: 100;
     transition: 0.8s;
   }
-  header .menu li {
-    width: 100%;
-  }
-  header .menu li a {
-    display: block;
-    padding: 2rem;
-  }
-  header .menu li:hover {
-    background: var(--white);
-    /* opacity: 0.5; */
-  }
-  .menu .hide-menu {
-    position: absolute;
-    top: 4rem;
-    right: 4rem;
-  }
-  #check:checked ~ .menu {
-    right: 0;
-  }
-  header .menu li:nth-child(5) a div,
-  header .menu li:nth-child(6) a div {
-    display: block;
-    padding: 1.5rem;
-    background-size: 210%;
-    background-position-x: center;
-  }
 }
-/* ::::::::::::::::::::::::::::::: */
-/* :::::::::::MAIN INDEX:::::::: */
-/* :::::::::::::::::::::::::::::: */
+
+/* :::::::::::::  MAIN  :::::::::::::::: */
 main {
   /* min-height: calc(100vh - 600px); */ /* este código es el que posisiona el footer*/
-  padding: 0px 100px 0; /* Este si va */
+  padding: 0px 100px 0;
   justify-content: space-between;
   text-align: center;
 }
-
-/* .........Main: first-section-index.......... */
-.esp {
+main .first-section-index .esp {
   position: absolute;
   top: 850px;
   bottom: 0;
   width: 350px;
   right: 900px;
 }
-
+@media (max-width: 900px) {
+  main .first-section-index .container-info .container-txt {
+    font-size: x-large;
+  }
+}
+/* ::::::::::::: FOOTER  ::::::::::::::: */
+/* ::::::::::::::::::::::::::::::: */
+/* :::::::::::MAIN INDEX:::::::: */
+/* :::::::::::::::::::::::::::::: */
+/* .........Main: first-section-index.......... */
 .container-info {
   display: flex;
   align-items: center;
