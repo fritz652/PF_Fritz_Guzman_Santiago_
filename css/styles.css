@@ -66,16 +66,19 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
 header .logo {
   text-transform: uppercase;
   color: var(--primary);
   font-weight: 200;
   font-size: x-large;
 }
+
 header .menu li {
   position: relative;
   float: left;
 }
+
 header .menu li a {
   color: var(--black);
   text-transform: uppercase;
@@ -905,7 +908,7 @@ footer p {
   height: 70px;
   border-radius: 20px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .shopping-cart {
