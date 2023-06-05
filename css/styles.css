@@ -150,7 +150,7 @@ header .menu li:nth-child(6) a div {
 @media (max-width: 900px) {
   header .menu li:nth-child(6) {
     display: block;
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
     background-size: 210%;
     background-position-x: center;
   }
@@ -197,31 +197,18 @@ main .first-section-index .esp {
   width: 350px;
   right: 900px;
 }
-@media (max-width: 900px) {
-  main .first-section-index .container-info .container-txt {
-    font-size: x-large;
-  }
-}
-/* ::::::::::::: FOOTER  ::::::::::::::: */
-/* ::::::::::::::::::::::::::::::: */
-/* :::::::::::MAIN INDEX:::::::: */
-/* :::::::::::::::::::::::::::::: */
-/* .........Main: first-section-index.......... */
-.container-info {
+main .first-section-index .container-info {
   display: flex;
   align-items: center;
 }
-
-.container-txt {
+main .first-section-index .container-info .container-txt {
   width: 50%;
   padding-right: 35px;
-  /* ver si lo elimino las 2 sigeuintes lineas */
   padding-top: 20px;
   text-align: center;
   font-size: 10px;
 }
-
-.container-txt h1 {
+main .first-section-index .container-info .container-txt h1 {
   font-size: 55px;
   line-height: 70px;
   font-weight: 600;
@@ -229,14 +216,24 @@ main .first-section-index .esp {
   margin-bottom: 25px;
   text-transform: capitalize;
 }
-
-.container-txt p {
+@media (max-width: 992px) {
+  main .first-section-index .container-info .container-txt h1 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 567px) {
+  main .first-section-index .container-info .container-txt h1 {
+    font-size: 40px;
+    white-space: pre-line;
+    width: 100%;
+  }
+}
+main .first-section-index .container-info .container-txt p {
   font-size: 16px;
   color: #303030;
   margin-bottom: 35px;
 }
-
-.btn-1 {
+main .first-section-index .container-info .container-txt .btn-1 {
   display: inline-block;
   background-color: #FF9F0D;
   padding: 13px 30px;
@@ -246,51 +243,54 @@ main .first-section-index .esp {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   font-size: large;
 }
-
-.btn-1:hover {
+main .first-section-index .container-info .container-txt .btn-1:hover {
   background-color: #EE9003;
 }
-
-.container-img {
+@media (max-width: 900px) {
+  main .first-section-index .container-info .container-txt {
+    font-size: x-large;
+  }
+}
+@media (max-width: 567px) {
+  main .first-section-index .container-info .container-txt {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+}
+main .first-section-index .container-info .container-img {
   width: 50%;
 }
-
-.container-img img {
-  /* width: 650px; */
+main .first-section-index .container-info .container-img img {
   width: 100%;
 }
-
 @media (max-width: 992px) {
-  .container-txt h1 {
-    font-size: 45px;
-  }
-  .container-img img {
+  main .first-section-index .container-info .container-img img {
     width: 500px;
+  }
+}
+@media (max-width: 768px) {
+  main .first-section-index .container-info .container-img img {
+    width: 90%;
   }
 }
 @media (max-width: 768px) {
   main {
     padding: 0px 30px;
   }
+}
+
+/* ::::::::::::: FOOTER  ::::::::::::::: */
+/* ::::::::::::::::::::::::::::::: */
+/* :::::::::::MAIN INDEX:::::::: */
+/* :::::::::::::::::::::::::::::: */
+/* .........Main: first-section-index.......... */
+@media (max-width: 768px) {
   .container-info {
     flex-direction: column;
-    /* padding: 30px; */
-  }
-  .container-img img {
-    width: 90%;
   }
 }
 @media (max-width: 567px) {
-  .container-txt h1 {
-    font-size: 40px;
-    white-space: pre-line;
-    width: 100%;
-  }
-  .container-txt {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-  }
   .container-img {
     width: 100%;
   }
