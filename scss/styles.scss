@@ -77,43 +77,67 @@ header{
         font-weight: 200;
         font-size:x-large;
         }
+        
+        .look-menu{
+            font-size: 3rem;
+            display: none;
+            transition: 0.4s;
+        }
+
+        .menu{
+            li{
+                position: relative;
+                float: left;
+
+                a{
+                    color:var(--black);
+                    text-transform: uppercase;
+                    padding: 0 2rem;
+                    font-size:var(--lg);
+                    transition: 0.4s;
+                }
+            }
+
+            li:nth-child(5) {
+                a {
+                    div{
+                        display: inline;
+                        padding: 0 11px;
+                        background-image: url("../assets/icons/shopping-cart.svg");
+                        background-repeat: no-repeat round;
+                        background-size: cover;
+                }
+            }
+            }
+
+            li:nth-child(6) {
+                a {
+                    div {
+                        display: inline;
+                        padding: 0 11px;
+                        background-image: url("../assets/icons/person-circle.svg");
+                        background-repeat: no-repeat round;
+                        background-size: cover;
+                    }
+                }
+            }
+
+            .hide-menu{
+                font-size: 3rem;
+                display: none;
+                transition: 0.4s;
+            }
 }
 
-.menu  li {
-    position: relative;
-    float: left;
-}
 
-header .menu li a{
-    color:var(--black);
-    text-transform: uppercase;
-    padding: 0 2rem;
-    font-size:var(--lg);
-    transition: 0.4s;
-}
-
-header .menu li:nth-child(5) a div{
-    display: inline;
-    padding: 0 11px;
-    background-image: url("../assets/icons/shopping-cart.svg");
-    background-repeat: no-repeat round;
-    background-size: cover;
-}
-
-header .menu li:nth-child(6) a div {
-    display: inline;
-    padding: 0 11px;
-    background-image: url("../assets/icons/person-circle.svg");
-    background-repeat: no-repeat round;
-    background-size: cover;
-}
-
-.look-menu,
-.hide-menu{
+/* .look-menu, */
+/* .hide-menu{
     font-size: 3rem;
     display: none;
     transition: 0.4s;
-}
+} */
+
+
 
 header .look-menu{
     order: 1;

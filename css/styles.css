@@ -72,12 +72,10 @@ header .logo {
   font-weight: 200;
   font-size: x-large;
 }
-
-.menu li {
+header .menu li {
   position: relative;
   float: left;
 }
-
 header .menu li a {
   color: var(--black);
   text-transform: uppercase;
