@@ -310,6 +310,11 @@ main .first-section-index .container-info .container-img img {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
+@media (max-width: 700px) {
+  .info-1 {
+    width: 100%;
+  }
+}
 
 .info-1 img {
   width: 35px;
@@ -667,6 +672,10 @@ main .contactenos .contactenos-contenido {
 .center-rigth {
   padding-right: 0;
 }
+.center-rigth h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
 
 main .contactenos .contactenos-img {
   background-image: url("../assets/img/contactanos-gratis.png");
@@ -938,6 +947,7 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 
 .shopping-cart p:nth-child(2) {
