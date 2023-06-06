@@ -1,73 +1,21 @@
-/*::::::::::::::::::: RESET::::::: */
+@import "./01-utilities/variables";
+@import "./02-base/reset";
+@import "./01-utilities/mixins";
+@import "./03-layout/header.scss";
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: none;
-    list-style: none;
-  }
-  
-  html {
-    font-size: 62.5%;
-  }
-  
-  body {
-    background-color: var(--fondo);
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  /* VARIABLES */
-  :root {
-    --white:#ffffff;
-    --black: #000000;
-    --fondo:#f2f2f2f2; /* #edecf1 */
-    --color-1:#c7c7c7;
-    /*  --primary: #f7f7f7; */
-    /*  --secundary: #ACD9B2; */
-    --primary: #FFC107;
-    --secundary: #8BC34A;
-    --secundary-b: #ACD9B2;
-    --emphasis:#E91E63;
-    --sm: 14px;
-    --md: 16px;
-    --lg: 20px;
-    --xl: 35px;
-    --very-light-pink:#c7c7c7;
-    --text-input-field: #f7f7f7;
-  }
-  
-  h1 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 3rem;
-    background-color: var(--fondo);
-  }
-  
-  h2 {
-    font-size: var(--lg);
-    font-weight: 900;
-  }
-  
-  p {
-    font-size: var(--lg);
-  }
+
   
   /*:::::::::::::  HEADER  ::::::::::::: */
   header {
     height: 100px;
-    background: var(--fondo);
+    background: $fondo;
     padding: 0 58px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     .logo{
         text-transform: uppercase;
-        color: var(--primary);
+        color: $primary;
         font-weight: 200;
         font-size: x-large;
     }
@@ -88,7 +36,7 @@
         transition: 0.4s;
 
         &:hover {
-          color: var(--primary);
+          color: $primary;
         }
         @media (max-width: 900px) {
           display: block;
@@ -101,14 +49,14 @@
           float: left;
 
           a {
-              color: var(--black);
+              color: $black;
               text-transform: uppercase;
               padding: 0 2rem;
-              font-size: var(--lg);
+              font-size: $lg;
               transition: 0.4s;
 
               &:hover {
-                color: var(--primary);
+                color: $primary;
               }
 
               @media (max-width:900px) {
@@ -118,13 +66,13 @@
             }
           .hide-menu {
             &:hover {
-              color: var(--primary);
+              color: $primary;
             }
           }
           @media (max-width:900px) {
             width: 100%;
             & :hover {
-              background: var(--white);
+              background: $white;
             }
           }
           
@@ -181,7 +129,7 @@
         position: fixed;
         width: 100%;
         height: 108vh;
-        background: var(--primary);
+        background: $primary;
         right: -100%;
         top: 0;
         text-align: center;
@@ -240,17 +188,10 @@
           }
 
           .btn-1{
-              display: inline-block;
-              background-color: #FF9F0D;
-              padding: 13px 30px;
-              border-radius: 25px;
-              color: #fff;
-              text-transform: capitalize;
-              box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-              font-size: large;
+              @include mixin_btn($primary, 13px 30px);
             
             &:hover {
-              background-color: #EE9003;
+              background-color: $darck_primary;
             }
             
           }
@@ -372,9 +313,12 @@
     width: 100%;
   }
   
+
+  /* revisar aqui */
   .nosotros-txt {
     width: 50%;
     padding-left: 35px;
+
   }
   
   .nosotros-txt span {
@@ -390,6 +334,7 @@
     margin-bottom: 30px;
   }
   
+  /* buscar aquí */
   .nosotros-txt p {
     font-size: 18px;
     color: #303030;
@@ -487,7 +432,7 @@
   /* ....MAIN-CARDS-INDEX.... */
   main .cardFood {
     grid-column: span 2;
-    background-color: var(--white);
+    background-color: $white;
     height: 300px;
     border-radius: 30px;
     box-shadow: 5px 5px 5px rgb(161, 160, 160);
@@ -495,8 +440,8 @@
   }
   
   /* main .cardFood:hover {
-      background-color:var(--primary);
-      color: var(--white);
+      background-color:$primary;
+      color: $white;
       transition: 0.8s;
   } */
   main .cardFood .CardFood__img {
@@ -521,9 +466,9 @@
   }
   
   main .cardFood div button {
-    color: var(--white);
+    color: $white;
     font-weight: bold;
-    background-color: var(--primary);
+    background-color: $primary;
     border-radius: 5px;
     height: 40px;
     width: 250px;
@@ -534,7 +479,7 @@
   }
   
   main .cardFood p:nth-child(3) {
-    font-size: var(--xl);
+    font-size: $xl;
     /*  position: absolute;
      left: 10%;
      top: 100%; */
@@ -564,7 +509,7 @@
   }
   
   .img-text {
-    background-color: var(--white);
+    background-color: $white;
     padding-top: 80px;
     width: 100%;
     height: 300px;
@@ -607,7 +552,7 @@
   }
   
   .col-md-12 .slide .carousel-indicators .active {
-    background: var(--primary);
+    background: $primary;
   }
   
   .circle-button {
@@ -720,7 +665,7 @@
     height: 100vh;
     display: grid;
     place-items: center;
-    /* background-color: var(--secundary-b); */
+    /* background-color: $secundary-b; */
     background-image: url("../assets/img/fondo-registro-m.jpg");
     /* background-repeat: no-repeat; */
   }
@@ -732,10 +677,10 @@
   }
   
   .title__register {
-    font-size: var(--lg);
+    font-size: $lg;
     margin-bottom: 12px;
     text-align: center;
-    color: var(--white);
+    color: $white;
   }
   
   .form {
@@ -744,8 +689,8 @@
   }
   
   .subtitle {
-    color: var(--very-light-pink);
-    font-size: var(--md);
+    color: $very-light-pink;
+    font-size: $md;
     font-weight: 300;
     margin-top: 0;
     margin-bottom: 32px;
@@ -753,30 +698,30 @@
   }
   
   .label {
-    font-size: var(--sm);
+    font-size: $sm;
     font-weight: bold;
     margin-bottom: 4px;
-    color: var(--white);
+    color: $white;
   }
   
   .input {
-    background-color: var(--text-input-field);
+    background-color: $text-input-field;
     border: none;
     border-radius: 8px;
     height: 50px;
-    font-size: var(--md);
+    font-size: $md;
     padding: 6px;
     margin-bottom: 12px;
   }
   
   .primary-button {
-    background-color: var(--primary);
+    background-color: $primary;
     border-radius: 8px;
     border: none;
     color: #fff;
     width: 100%;
     cursor: pointer;
-    font-size: var(--md);
+    font-size: $md;
     font-weight: bold;
     height: 50px;
   }
@@ -792,7 +737,7 @@
   }
   
   .form-container .primary-button--Gmail {
-    background-color: var(--secundary-b);
+    background-color: $secundary-b;
   }
   
   /* ::::::FOOTER:::::::: */
@@ -908,7 +853,7 @@
   }
   
   .title {
-    font-size: var(--lg);
+    font-size: $lg;
     font-weight: bold;
   }
   
@@ -917,7 +862,7 @@
     grid-template-columns: auto 1fr;
     gap: 16px;
     align-items: center;
-    background-color: var(--text-input-field);
+    background-color: $text-input-field;
     margin-bottom: 24px;
     border-radius: 8px;
     padding: 0 24px;
@@ -929,7 +874,7 @@
   }
   
   .order p span:nth-child(1) {
-    font-size: var(--md);
+    font-size: $md;
     font-weight: bold;
   }
   
@@ -974,11 +919,11 @@
   }
   
   .shopping-cart p:nth-child(2) {
-    color: var(--very-light-pink);
+    color: $very-light-pink;
   }
   
   .shopping-cart p:nth-child(3) {
-    font-size: var(--md);
+    font-size: $md;
     font-weight: bold;
   }
   
