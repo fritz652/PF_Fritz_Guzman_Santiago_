@@ -1,1 +1,127 @@
-/*# sourceMappingURL=header.css.map */
+/* #FFC107; */
+/* 
+  @debug map-get($color,"primary"); */
+header {
+  height: 100px;
+  background: rgba(242, 242, 242, 0.9490196078);
+  padding: 0 58px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  text-transform: uppercase;
+  color: #FF9F0D;
+  font-weight: 200;
+  font-size: x-large;
+}
+header #check {
+  display: none;
+}
+@media (max-width: 900px) {
+  header #check:checked ~ .menu {
+    right: 0;
+  }
+}
+header .look-menu {
+  order: 1;
+  font-size: 3rem;
+  display: none;
+  transition: 0.4s;
+}
+header .look-menu:hover {
+  color: #FF9F0D;
+}
+@media (max-width: 900px) {
+  header .look-menu {
+    display: block;
+  }
+}
+header .menu li {
+  position: relative;
+  float: left;
+}
+header .menu li a {
+  color: #000;
+  text-transform: uppercase;
+  padding: 0 2rem;
+  font-size: 20px;
+  transition: 0.4s;
+}
+header .menu li a:hover {
+  color: #FF9F0D;
+}
+@media (max-width: 900px) {
+  header .menu li a {
+    display: block;
+    padding: 2rem;
+  }
+}
+header .menu li .hide-menu:hover {
+  color: #FF9F0D;
+}
+@media (max-width: 900px) {
+  header .menu li {
+    width: 100%;
+  }
+  header .menu li :hover {
+    background: #fff;
+  }
+}
+header .menu li:nth-child(5) a div {
+  display: inline;
+  padding: 0 11px;
+  background-image: url("../assets/icons/shopping-cart.svg");
+  background-repeat: no-repeat round;
+  background-size: cover;
+}
+@media (max-width: 900px) {
+  header .menu li:nth-child(5) a {
+    display: block;
+    padding: 1.5rem;
+    background-size: 210%;
+    background-position-x: center;
+  }
+}
+header .menu li:nth-child(6) a div {
+  display: inline;
+  padding: 0 11px;
+  background-image: url("../assets/icons/person-circle.svg");
+  background-repeat: no-repeat round;
+  background-size: cover;
+}
+@media (max-width: 900px) {
+  header .menu li:nth-child(6) {
+    display: block;
+    /* padding: 1.5rem; */
+    background-size: 210%;
+    background-position-x: center;
+  }
+}
+header .menu .hide-menu {
+  font-size: 3rem;
+  display: none;
+  transition: 0.4s;
+}
+@media (max-width: 900px) {
+  header .menu .hide-menu {
+    display: block;
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+  }
+}
+@media (max-width: 900px) {
+  header .menu {
+    position: fixed;
+    width: 100%;
+    height: 108vh;
+    background: #FF9F0D;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 8rem 0;
+    z-index: 100;
+    transition: 0.8s;
+  }
+}/*# sourceMappingURL=header.css.map */

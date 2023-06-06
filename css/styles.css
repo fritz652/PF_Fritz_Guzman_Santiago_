@@ -42,8 +42,9 @@ p {
 /* #FFC107; */
 /* 
   @debug map-get($color,"primary"); */
-/* @import "./03-layout/header.scss"; */
-/*:::::::::::::  HEADER  ::::::::::::: */
+/* #FFC107; */
+/* 
+  @debug map-get($color,"primary"); */
 header {
   height: 100px;
   background: rgba(242, 242, 242, 0.9490196078);
@@ -224,7 +225,6 @@ main .first-section-index .container-info .container-txt .btn-1 {
   background-color: #FF9F0D;
   padding: 13px 30px;
   border-radius: 25px;
-  /* color: map-get(colors, "blanco" ); */
   color: #fff;
   text-transform: capitalize;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -289,8 +289,7 @@ main .first-section-index .container-info .container-img img {
   justify-content: space-between;
   gap: 45px;
 }
-
-.info-1 {
+.secund-section-index .info-1 {
   width: 300px;
   padding: 25px;
   text-align: center;
@@ -300,22 +299,20 @@ main .first-section-index .container-info .container-img img {
         width: 100%;
       } */
 }
-
-.info-1 img {
+.secund-section-index .info-1 img {
   width: 35px;
 }
-
-.info-1 h3 {
+.secund-section-index .info-1 h3 {
   font-size: 18px;
   color: #303030;
   margin-bottom: 10px;
 }
-
-.info-1 p {
+.secund-section-index .info-1 p {
   font-size: 16px;
   color: #303030;
 }
 
+/* .........Main: third-section-index.......... */
 .nosotros {
   position: relative;
 }
@@ -344,7 +341,6 @@ main .first-section-index .container-info .container-img img {
   background-color: #FF9F0D;
   padding: 13px 30px;
   border-radius: 25px;
-  /* color: map-get(colors, "blanco" ); */
   color: #fff;
   text-transform: capitalize;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -355,7 +351,6 @@ main .first-section-index .container-info .container-img img {
   background-color: #EE9003;
   padding: 13px 30px;
   border-radius: 25px;
-  /* color: map-get(colors, "blanco" ); */
   color: #fff;
   text-transform: capitalize;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
