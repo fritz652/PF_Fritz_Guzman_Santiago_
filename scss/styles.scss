@@ -1,6 +1,7 @@
 @import "./01-utilities/variables";
 @import "./02-base/reset";
 @import "./01-utilities/mixins";
+@import "./01-utilities/maps";
 @import "./03-layout/header.scss";
 
 
@@ -275,9 +276,9 @@
     text-align: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    @media (max-width:700px) {
+/*     @media (max-width:700px) {
       width: 100%;
-    }
+    } */
   }
   
   .info-1 img {
@@ -318,7 +319,12 @@
   .nosotros-txt {
     width: 50%;
     padding-left: 35px;
-
+    .btn-1 {
+      @include mixin_btn($primary, 13px 30px);
+      &:hover{
+        @include mixin_btn($darck_primary, 13px 30px);
+      }
+    }
   }
   
   .nosotros-txt span {

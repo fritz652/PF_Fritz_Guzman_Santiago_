@@ -40,6 +40,8 @@ p {
 
 /* VARIABLES CON SASS*/
 /* #FFC107; */
+/* VARIABLES CON SASS*/
+/* #FFC107; */
 /*:::::::::::::  HEADER  ::::::::::::: */
 header {
   height: 100px;
@@ -292,11 +294,9 @@ main .first-section-index .container-info .container-img img {
   text-align: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-}
-@media (max-width: 700px) {
-  .info-1 {
-    width: 100%;
-  }
+  /*     @media (max-width:700px) {
+        width: 100%;
+      } */
 }
 
 .info-1 img {
@@ -336,6 +336,26 @@ main .first-section-index .container-info .container-img img {
 .nosotros-txt {
   width: 50%;
   padding-left: 35px;
+}
+.nosotros-txt .btn-1 {
+  display: inline-block;
+  background-color: #FF9F0D;
+  padding: 13px 30px;
+  border-radius: 25px;
+  color: #fff;
+  text-transform: capitalize;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  font-size: large;
+}
+.nosotros-txt .btn-1:hover {
+  display: inline-block;
+  background-color: #EE9003;
+  padding: 13px 30px;
+  border-radius: 25px;
+  color: #fff;
+  text-transform: capitalize;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  font-size: large;
 }
 
 .nosotros-txt span {
