@@ -1,16 +1,34 @@
-  /* VARIABLES CON SASS*/
+ // Theme colors
+  $primary: #FF9F0D;/* #FFC107; */
+  $primary-b:#EE9003;
+  $secundary: #8BC34A;
+  $secundary-b: #ACD9B2;
+  $emphasis:#E91E63;
+
   $white:#fff;
   $black:#000;
   $fondo:#f2f2f2f2; 
   $color-1:#c7c7c7;
-  $primary: #FF9F0D;/* #FFC107; */
-  $darck_primary:#EE9003;
-  $secundary: #8BC34A;
-  $secundary-b: #ACD9B2;
-  $emphasis:#E91E63;
+
+  $very-light-pink:#c7c7c7;
+  $text-input-field: #f7f7f7;
+
+  //color palette (maps-colors)
+  $colors:(
+    "primary":$primary,
+    "primary-b":$primary-b,
+    "secundary":$secundary,
+    "secundary-b":$secundary-b,
+    "emphasis":$emphasis,
+    "white":$white,
+    "black":$black,
+    "fondo":$fondo,
+    "color-1":$color-1,
+  );
+/* 
+  @debug map-get($color,"primary"); */
+ 
   $sm: 14px;
   $md: 16px;
   $lg: 20px;
   $xl: 35px;
-  $very-light-pink:#c7c7c7;
-  $text-input-field: #f7f7f7;

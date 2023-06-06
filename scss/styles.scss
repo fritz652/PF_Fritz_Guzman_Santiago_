@@ -1,7 +1,6 @@
 @import "./01-utilities/variables";
 @import "./02-base/reset";
 @import "./01-utilities/mixins";
-@import "./01-utilities/maps";
 @import "./03-layout/header.scss";
 
 
@@ -192,7 +191,7 @@
               @include mixin_btn($primary, 13px 30px);
             
             &:hover {
-              background-color: $darck_primary;
+              background-color: $primary-b;
             }
             
           }
@@ -322,7 +321,7 @@
     .btn-1 {
       @include mixin_btn($primary, 13px 30px);
       &:hover{
-        @include mixin_btn($darck_primary, 13px 30px);
+        @include mixin_btn($primary-b, 13px 30px);
       }
     }
   }
