@@ -1,6 +1,7 @@
 @charset "UTF-8";
-/* VARIABLES CON SASS*/
 /* #FFC107; */
+/* 
+  @debug map-get($color,"primary"); */
 * {
   margin: 0;
   padding: 0;
@@ -38,10 +39,10 @@ p {
   font-size: 20px;
 }
 
-/* VARIABLES CON SASS*/
 /* #FFC107; */
-/* VARIABLES CON SASS*/
-/* #FFC107; */
+/* 
+  @debug map-get($color,"primary"); */
+/* @import "./03-layout/header.scss"; */
 /*:::::::::::::  HEADER  ::::::::::::: */
 header {
   height: 100px;
@@ -223,6 +224,7 @@ main .first-section-index .container-info .container-txt .btn-1 {
   background-color: #FF9F0D;
   padding: 13px 30px;
   border-radius: 25px;
+  /* color: map-get(colors, "blanco" ); */
   color: #fff;
   text-transform: capitalize;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -342,6 +344,7 @@ main .first-section-index .container-info .container-img img {
   background-color: #FF9F0D;
   padding: 13px 30px;
   border-radius: 25px;
+  /* color: map-get(colors, "blanco" ); */
   color: #fff;
   text-transform: capitalize;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -352,6 +355,7 @@ main .first-section-index .container-info .container-img img {
   background-color: #EE9003;
   padding: 13px 30px;
   border-radius: 25px;
+  /* color: map-get(colors, "blanco" ); */
   color: #fff;
   text-transform: capitalize;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);

@@ -1,11 +1,12 @@
 @import "./01-utilities/variables";
 @import "./02-base/reset";
 @import "./01-utilities/mixins";
-@import "./03-layout/header.scss";
+/* @import "./03-layout/header.scss"; */
 
 
   
   /*:::::::::::::  HEADER  ::::::::::::: */
+
   header {
     height: 100px;
     background: $fondo;
@@ -981,4 +982,5 @@
   #map {
     height: 400px;
     width: 100%;
-  }
+  }  
+  

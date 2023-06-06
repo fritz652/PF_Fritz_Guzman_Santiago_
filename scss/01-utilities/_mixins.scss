@@ -5,7 +5,8 @@
     background-color: $bg;
     padding: $pad;
     border-radius: 25px;
-    color: map-get(colors, "white" );
+    /* color: map-get(colors, "blanco" ); */
+    color:$white;
     text-transform: capitalize;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     font-size: large;
