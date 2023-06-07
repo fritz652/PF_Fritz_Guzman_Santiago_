@@ -176,7 +176,6 @@ main {
   padding: 0px 100px 0;
   justify-content: space-between;
   text-align: center;
-  /* .........section-index.......... */
 }
 main .first-section-index .esp {
   position: absolute;
@@ -262,16 +261,6 @@ main .first-section-index .container-info .container-img img {
     width: 90%;
   }
 }
-@media (max-width: 567px) {
-  main .first-section-index .container-info .container-img {
-    width: 100%;
-  }
-}
-@media (max-width: 768px) {
-  main .first-section-index .container-info {
-    flex-direction: column;
-  }
-}
 @media (max-width: 768px) {
   main {
     padding: 0px 30px;
@@ -282,6 +271,17 @@ main .first-section-index .container-info .container-img img {
 /* ::::::::::::::::::::::::::::::: */
 /* :::::::::::MAIN INDEX:::::::: */
 /* :::::::::::::::::::::::::::::: */
+/* .........Main: first-section-index.......... */
+@media (max-width: 768px) {
+  .container-info {
+    flex-direction: column;
+  }
+}
+@media (max-width: 567px) {
+  .container-img {
+    width: 100%;
+  }
+}
 /* .........Main: secund-section-index.......... */
 .secund-section-index {
   padding: 100px 100px 10px;
@@ -312,42 +312,31 @@ main .first-section-index .container-info .container-img img {
   color: #303030;
 }
 
-/* .........Main: third-section-index.......... */
-/* ..................Nosotros.................. */
+/* .........Main: secund-section-index.......... */
 .nosotros {
   position: relative;
 }
-.nosotros .nosotros-info {
+
+.nosotros-info {
   display: flex;
   align-items: center;
 }
-.nosotros .nosotros-info .nosotros-img {
+
+.nosotros-img {
   width: 50%;
 }
-.nosotros .nosotros-info .nosotros-img img {
+
+.nosotros-img img {
+  /* width: 650px; */
   width: 100%;
 }
-.nosotros .nosotros-info .nosotros-img .nosotros-txt {
+
+/* revisar aqui */
+.nosotros-txt {
   width: 50%;
   padding-left: 35px;
 }
-.nosotros .nosotros-info .nosotros-img .nosotros-txt span {
-  font-size: 16px;
-  color: #FF9F0D;
-  font-weight: 700;
-  margin-bottom: 25px;
-}
-.nosotros .nosotros-info .nosotros-img .nosotros-txt h2 {
-  font-size: 45px;
-  color: #303030;
-  margin-bottom: 30px;
-}
-.nosotros .nosotros-info .nosotros-img .nosotros-txt p {
-  font-size: 18px;
-  color: #303030;
-  margin-bottom: 50px;
-}
-.nosotros .nosotros-info .nosotros-img .nosotros-txt .btn-1 {
+.nosotros-txt .btn-1 {
   display: inline-block;
   background-color: #FF9F0D;
   padding: 13px 30px;
@@ -357,7 +346,7 @@ main .first-section-index .container-info .container-img img {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   font-size: large;
 }
-.nosotros .nosotros-info .nosotros-img .nosotros-txt .btn-1:hover {
+.nosotros-txt .btn-1:hover {
   display: inline-block;
   background-color: #EE9003;
   padding: 13px 30px;
@@ -368,8 +357,28 @@ main .first-section-index .container-info .container-img img {
   font-size: large;
 }
 
-/* .........Main: fourt-section-index............ */
-/* ..................cards.................... */
+.nosotros-txt span {
+  font-size: 16px;
+  color: #FF9F0D;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.nosotros-txt h2 {
+  font-size: 45px;
+  color: #303030;
+  margin-bottom: 30px;
+}
+
+/* buscar aquí */
+.nosotros-txt p {
+  font-size: 18px;
+  color: #303030;
+  margin-bottom: 50px;
+}
+
+/* .........Main: third-section-index............ */
+/* ..................nosotros.................... */
 main .cardsContainer {
   display: grid;
   gap: 5rem;
