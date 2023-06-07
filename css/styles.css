@@ -261,6 +261,16 @@ main .first-section-index .container-info .container-img img {
     width: 90%;
   }
 }
+@media (max-width: 567px) {
+  main .first-section-index .container-info .container-img {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  main .first-section-index .container-info {
+    flex-direction: column;
+  }
+}
 @media (max-width: 768px) {
   main {
     padding: 0px 30px;
@@ -268,20 +278,6 @@ main .first-section-index .container-info .container-img img {
 }
 
 /* ::::::::::::: FOOTER  ::::::::::::::: */
-/* ::::::::::::::::::::::::::::::: */
-/* :::::::::::MAIN INDEX:::::::: */
-/* :::::::::::::::::::::::::::::: */
-/* .........Main: first-section-index.......... */
-@media (max-width: 768px) {
-  .container-info {
-    flex-direction: column;
-  }
-}
-@media (max-width: 567px) {
-  .container-img {
-    width: 100%;
-  }
-}
 /* .........Main: secund-section-index.......... */
 .secund-section-index {
   padding: 100px 100px 10px;
@@ -295,21 +291,23 @@ main .first-section-index .container-info .container-img img {
   text-align: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  /*     @media (max-width:700px) {
-        width: 100%;
-      } */
 }
-.secund-section-index .info-1 img {
+.secund-section-index img {
   width: 35px;
 }
-.secund-section-index .info-1 h3 {
+.secund-section-index h3 {
   font-size: 18px;
   color: #303030;
   margin-bottom: 10px;
 }
-.secund-section-index .info-1 p {
+.secund-section-index p {
   font-size: 16px;
   color: #303030;
+}
+@media (max-width: 1000px) {
+  .secund-section-index {
+    width: 100%;
+  }
 }
 
 /* .........Main: secund-section-index.......... */
