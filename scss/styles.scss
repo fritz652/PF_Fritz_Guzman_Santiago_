@@ -10,6 +10,7 @@
     padding: 0px 100px 0; 
     justify-content: space-between;
     text-align: center;
+     /* .........section-index.......... */
     .first-section-index{
       .esp {
         position: absolute;
@@ -80,6 +81,12 @@
                 width: 90%;
             }
           }
+          @media (max-width: 567px) {
+            width: 100%;
+          }
+        }
+        @media (max-width: 768px) {
+            flex-direction: column;
         }
         
       }
@@ -110,19 +117,6 @@
   /* :::::::::::MAIN INDEX:::::::: */
   /* :::::::::::::::::::::::::::::: */
     
-  /* .........Main: first-section-index.......... */
-
-  @media (max-width: 768px) {
-    .container-info {
-      flex-direction: column;
-    }
-  }
-
-  @media (max-width: 567px) {
-     .container-img {
-      width: 100%;
-    }
-  }
   /* .........Main: secund-section-index.......... */
   .secund-section-index {
     padding: 100px 100px 10px;
@@ -155,59 +149,50 @@
   }
   
 /* .........Main: third-section-index.......... */
+/* ..................Nosotros.................. */
   .nosotros {
     position: relative;
-  }
-  
-  .nosotros-info {
-    display: flex;
-    align-items: center;
-  }
-  
-  .nosotros-img {
-    width: 50%;
-  }
-  
-  .nosotros-img img {
-    /* width: 650px; */
-    width: 100%;
-  }
-  
-
-  /* revisar aqui */
-  .nosotros-txt {
-    width: 50%;
-    padding-left: 35px;
-    .btn-1 {
-      @include mixin_btn($primary, 13px 30px);
-      &:hover{
-        @include mixin_btn($primary-b, 13px 30px);
+    .nosotros-info {
+      display: flex;
+      align-items: center;
+      .nosotros-img {
+        width: 50%;
+        img {
+          width: 100%;
+        }
+        .nosotros-txt {
+          width: 50%;
+          padding-left: 35px;
+          span {
+            font-size: 16px;
+            color: #FF9F0D;
+            font-weight: 700;
+            margin-bottom: 25px;
+          }
+          h2 {
+            font-size: 45px;
+            color: #303030;
+            margin-bottom: 30px;
+          }
+          p {
+            font-size: 18px;
+            color: #303030;
+            margin-bottom: 50px;
+          }
+          .btn-1 {
+            @include mixin_btn($primary, 13px 30px);
+            &:hover{
+              @include mixin_btn($primary-b, 13px 30px);
+            }
+          }
+        }
       }
     }
   }
   
-  .nosotros-txt span {
-    font-size: 16px;
-    color: #FF9F0D;
-    font-weight: 700;
-    margin-bottom: 25px;
-  }
-  
-  .nosotros-txt h2 {
-    font-size: 45px;
-    color: #303030;
-    margin-bottom: 30px;
-  }
-  
-  /* buscar aquí */
-  .nosotros-txt p {
-    font-size: 18px;
-    color: #303030;
-    margin-bottom: 50px;
-  }
-  
-  /* .........Main: third-section-index............ */
-  /* ..................nosotros.................... */
+
+  /* .........Main: fourt-section-index............ */
+  /* ..................cards.................... */
   main .cardsContainer {
     display: grid;
     gap: 5rem;
@@ -216,6 +201,7 @@
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); /* Esta linea reemplaza algunas medias queries */
     justify-content: center;
     padding-bottom: 100px;
+
   }
   
   main .nosotros {
