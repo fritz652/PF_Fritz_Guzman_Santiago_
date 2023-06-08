@@ -678,6 +678,13 @@ main .contactenos .contactenos-contenido {
   text-align: center;
   padding-bottom: 30px;
 }
+.center-rigth .info-1 {
+  width: 300px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
 
 main .contactenos .contactenos-img {
   background-image: url("../assets/img/contactanos-gratis.png");
@@ -974,9 +981,16 @@ footer p {
 .main-shopping {
   align-items: center;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  /*  gap: 16px; */
+  gap: 50px;
   margin: 16px;
+}
+@media (max-width: 1500px) {
+  .main-shopping {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;
+  }
 }
 
 .grid-row {
