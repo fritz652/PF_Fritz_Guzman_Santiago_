@@ -42,9 +42,6 @@ p {
 /* #FFC107; */
 /* 
   @debug map-get($color,"primary"); */
-/* #FFC107; */
-/* 
-  @debug map-get($color,"primary"); */
 header {
   height: 100px;
   background: rgba(242, 242, 242, 0.9490196078);
@@ -708,7 +705,6 @@ main .contactenos .contactenos-img {
   place-items: center;
   /* background-color: $secundary-b; */
   background-image: url("../assets/img/fondo-registro-m.jpg");
-  /* background-repeat: no-repeat; */
 }
 
 .form-container {

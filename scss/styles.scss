@@ -1,7 +1,7 @@
 @import "./01-utilities/variables";
 @import "./02-base/reset";
 @import "./01-utilities/mixins";
-@import "./03-layout/header.scss";
+@import "./03-layout/header";
 
 
 /* :::::::::::::  MAIN  :::::::::::::::: */
@@ -528,7 +528,6 @@
     place-items: center;
     /* background-color: $secundary-b; */
     background-image: url("../assets/img/fondo-registro-m.jpg");
-    /* background-repeat: no-repeat; */
   }
   
   .form-container {
