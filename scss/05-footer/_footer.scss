@@ -1,0 +1,109 @@
+  
+  /* ::::::FOOTER:::::::: */
+  hr {
+    border: 1.5px solid #EEE;
+  }
+  
+  .footer {
+    padding: 100px 100px;
+  }
+  
+  .footer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .footer-links {
+      display: flex;
+      justify-content: space-between;
+
+      .link {
+        
+        h3 {
+            font-size: 20px;
+            color: #303030;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        ul {
+            li {
+                a {
+                    color:#000;
+                }
+            }
+        }
+        }
+    }
+  }
+  
+
+  .socials img {
+    margin-right: 15px;
+  }
+  
+  .link ul li {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+    color: #545454;
+  }
+  
+  footer p {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 50px;
+  }
+  
+  @media (max-width: 1082px) {
+    .footer {
+      padding: 30px;
+      position: relative;
+    }
+    .socials {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .link-redes {
+      grid-area: redes;
+    }
+    .link-nosotros {
+      grid-area: nosotros;
+    }
+    .link-guia {
+      grid-area: guia;
+    }
+    .link-escuchamos {
+      grid-area: escuchanos;
+    }
+    .footer-links {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "redes redes redes" "nosotros guia escuchanos";
+    }
+  }
+  @media (max-width: 750px) {
+    .footer-links {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .link-redes {
+      grid-area: redes;
+    }
+    .link-nosotros {
+      grid-area: nosotros;
+    }
+    .link-guia {
+      grid-area: guia;
+    }
+    .link-escuchamos {
+      grid-area: escuchamos;
+    }
+    .footer-links {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "redes redes redes redes" "nosotros nosotros nosotros nosotros" "guia guia guia guia" "escuchamos escuchamos escuchamos escuchamos";
+    }
+  }

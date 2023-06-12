@@ -5,15 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recetas</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <header>
-            <h1>Recetas DOMI</h1> 
-        <nav>
-            <ul>
-                <li><a href="#">Recetas DOMI</a></li>
-                <li><a href="#">Menu del día</a></li>
-            </ul>
+        <h2 class="logo"><a href="./index.html">Domi</a></h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="look-menu">
+            &#8801
+        </label>
+        <nav class="menu">  
+            <li><a href="./Consejos.html">Consejos</a></li>
+            <li><a href="./recetas.html">Recetas</a></li>
+            <li><a href="./habitos.html">Hábitos </a></li>
+            <li><a href="./dormir.html">Dormir</a></li>
+            <label for="check" class="hide-menu">
+                &#215
+            </label>
         </nav>
     </header>
     <main>
@@ -56,8 +64,52 @@
             </article>
         </section>
     </main>
-    <footer>
+    <footer class="footer footer__container">
 
+        <div class="footer-links">
+
+            <div class="link link-redes">
+
+                <h3>DOMI</h3>
+                <div class="socials">
+                    <img src="assets/icons/s1.svg" alt="">
+                    <img src="assets/icons/s2.svg" alt="">
+                    <img src="assets/icons/s3.svg" alt="">
+                    <img src="assets/icons/s4.svg" alt="">
+                </div>
+            </div>
+
+            <div class="link link-nosotros">
+                <h3>Nosotros</h3>
+                <ul>
+                    <li><a href="#"></a>Blog</li>
+                    <li><a href="#"></a>Eventos</li>
+                    <li><a href="#"></a>Nuestros aliados</li>
+                    <li><a href="#"></a>Trabaja con nosotros</li>
+                </ul>
+            </div>
+            <div class="link link-guia">
+                <h3>Guía nutricional</h3>
+                <ul>
+                    <li><a href="#"></a>Concejos</li>
+                    <li><a href="#"></a>Recetas</li>
+                    <li><a href="#"></a>¿Cómo crear buenos hábitos?</li>
+                    <li><a href="#"></a>Dormir bien</li>
+                </ul>
+            </div>
+            <div class="link link-escuchamos">
+                <h3>Te escuchamos</h3>
+                <ul>
+                    <li><a href="#"></a>Comprobante electrónico</li>
+                    <li><a href="#"></a>Quiero ser socio</li>
+                    <li><a href="#"></a>Suguerencias</li>
+                    <li><a href="#"></a>Libro de reclamaciones</li>
+                </ul>
+            </div>
+
+        </div>
+        
+        <p>Copyrigth &copy; 2023  Fritz Guzman</p>
     </footer>
 </body>
 </html>

@@ -39,9 +39,6 @@ p {
   font-size: 20px;
 }
 
-/* #FFC107; */
-/* 
-  @debug map-get($color,"primary"); */
 header {
   height: 100px;
   background: rgba(242, 242, 242, 0.9490196078);
@@ -167,6 +164,139 @@ header .menu .hide-menu {
   }
 }
 
+.flex-colum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.main {
+  /*..... nosotros.... */
+}
+.main .banner .banner-content {
+  background-image: url("../../assets/img/cocinando.jpg");
+}
+.main section h2 {
+  background-color: red;
+}
+.main .four_consejos {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100px 100px;
+  grid-template-areas: "item-one item-two" "item-three item-four";
+}
+.main .four_consejos .item-one {
+  grid-area: item-one;
+}
+.main .four_consejos .item-two {
+  grid-area: item-two;
+}
+.main .four_consejos .item-three {
+  grid-area: item-three;
+}
+.main .four_consejos .item-four {
+  grid-area: item-four;
+}
+
+/* ::::::FOOTER:::::::: */
+hr {
+  border: 1.5px solid #EEE;
+}
+
+.footer {
+  padding: 100px 100px;
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer__container .footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__container .footer-links .link h3 {
+  font-size: 20px;
+  color: #303030;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.footer__container .footer-links .link ul li a {
+  color: #000;
+}
+
+.socials img {
+  margin-right: 15px;
+}
+
+.link ul li {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 10px;
+  color: #545454;
+}
+
+footer p {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 50px;
+}
+
+@media (max-width: 1082px) {
+  .footer {
+    padding: 30px;
+    position: relative;
+  }
+  .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .link-redes {
+    grid-area: redes;
+  }
+  .link-nosotros {
+    grid-area: nosotros;
+  }
+  .link-guia {
+    grid-area: guia;
+  }
+  .link-escuchamos {
+    grid-area: escuchanos;
+  }
+  .footer-links {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "redes redes redes" "nosotros guia escuchanos";
+  }
+}
+@media (max-width: 750px) {
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .link-redes {
+    grid-area: redes;
+  }
+  .link-nosotros {
+    grid-area: nosotros;
+  }
+  .link-guia {
+    grid-area: guia;
+  }
+  .link-escuchamos {
+    grid-area: escuchamos;
+  }
+  .footer-links {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "redes redes redes redes" "nosotros nosotros nosotros nosotros" "guia guia guia guia" "escuchamos escuchamos escuchamos escuchamos";
+  }
+}
 /* :::::::::::::  MAIN  :::::::::::::::: */
 main {
   /* min-height: calc(100vh - 600px); */ /* este código es el que posisiona el footer*/
@@ -682,6 +812,9 @@ main .contactenos .contactenos-contenido {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
+.center-rigth .info-1 img {
+  width: 35px;
+}
 
 main .contactenos .contactenos-img {
   background-image: url("../assets/img/contactanos-gratis.png");
@@ -777,103 +910,6 @@ main .contactenos .contactenos-img {
   background-color: #ACD9B2;
 }
 
-/* ::::::FOOTER:::::::: */
-hr {
-  border: 1px solid #EEE;
-}
-
-.footer {
-  padding: 100px 100px;
-}
-
-.footer__container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-links .link h3 {
-  font-size: 20px;
-  color: #303030;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.socials img {
-  margin-right: 15px;
-}
-
-.link ul li {
-  font-size: 16px;
-  display: block;
-  margin-bottom: 10px;
-  color: #545454;
-}
-
-footer p {
-  text-align: center;
-  font-size: 12px;
-  margin-top: 50px;
-}
-
-@media (max-width: 1082px) {
-  .footer {
-    padding: 30px;
-    position: relative;
-  }
-  .socials {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .link-redes {
-    grid-area: redes;
-  }
-  .link-nosotros {
-    grid-area: nosotros;
-  }
-  .link-guia {
-    grid-area: guia;
-  }
-  .link-escuchamos {
-    grid-area: escuchanos;
-  }
-  .footer-links {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "redes redes redes" "nosotros guia escuchanos";
-  }
-}
-@media (max-width: 750px) {
-  .footer-links {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .link-redes {
-    grid-area: redes;
-  }
-  .link-nosotros {
-    grid-area: nosotros;
-  }
-  .link-guia {
-    grid-area: guia;
-  }
-  .link-escuchamos {
-    grid-area: escuchamos;
-  }
-  .footer-links {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "redes redes redes redes" "nosotros nosotros nosotros nosotros" "guia guia guia guia" "escuchamos escuchamos escuchamos escuchamos";
-  }
-}
 /* :::::MY ORDER::: */
 .product-detail {
   padding: 24px;

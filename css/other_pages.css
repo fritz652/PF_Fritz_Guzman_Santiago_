@@ -1,0 +1,34 @@
+.flex-colum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.main {
+  /*..... nosotros.... */
+}
+.main .banner .banner-content {
+  background-image: url("../../assets/img/cocinando.jpg");
+}
+.main section h2 {
+  background-color: red;
+}
+.main .four_consejos {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100px 100px;
+  grid-template-areas: "item-one item-two" "item-three item-four";
+}
+.main .four_consejos .item-one {
+  grid-area: item-one;
+}
+.main .four_consejos .item-two {
+  grid-area: item-two;
+}
+.main .four_consejos .item-three {
+  grid-area: item-three;
+}
+.main .four_consejos .item-four {
+  grid-area: item-four;
+}/*# sourceMappingURL=other_pages.css.map */
