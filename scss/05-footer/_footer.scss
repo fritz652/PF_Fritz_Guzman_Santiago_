@@ -6,6 +6,15 @@
   
   .footer {
     padding: 100px 100px;
+    p {
+      text-align: center;
+      font-size: 12px;
+      margin-top: 50px;
+    }
+    @media (max-width:1082px) {
+      padding: 30px;
+      position: relative;
+    }
   }
   
   .footer__container {
@@ -26,84 +35,71 @@
         }
         ul {
             li {
+              font-size: 16px;
+              display: block;
+              margin-bottom: 10px;
+              color: #545454;
                 a {
                     color:#000;
                 }
             }
         }
         }
+      
+      .link-redes{
+        .socials {
+          img{
+            margin-right: 15px;
+          }
+          @media (max-width:1082px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+
+      @media (max-width:1082px) {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "redes redes redes" "nosotros guia escuchamos";
+      }
+      .link-redes {
+        @media (max-width:1082px) {
+          grid-area: redes;
+        }
+      }
+      .link-nosotros {
+        @media (max-width:1082px) {
+          grid-area: nosotros;
+        }
+      }
+      .link-guia {
+        @media (max-width:1082px) {
+          grid-area: guia;
+        }
+      }
+      .link-escuchamos {
+        @media (max-width:1082px) {
+          grid-area: escuchamos;
+        }
+      }
+      @media (max-width:750px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "redes redes redes redes" 
+        "nosotros nosotros nosotros nosotros"
+        "guia guia guia guia" 
+        "escuchamos escuchamos escuchamos escuchamos";
+      }
     }
   }
   
 
-  .socials img {
-    margin-right: 15px;
-  }
-  
-  .link ul li {
-    font-size: 16px;
-    display: block;
-    margin-bottom: 10px;
-    color: #545454;
-  }
-  
-  footer p {
-    text-align: center;
-    font-size: 12px;
-    margin-top: 50px;
-  }
-  
-  @media (max-width: 1082px) {
-    .footer {
-      padding: 30px;
-      position: relative;
-    }
-    .socials {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .link-redes {
-      grid-area: redes;
-    }
-    .link-nosotros {
-      grid-area: nosotros;
-    }
-    .link-guia {
-      grid-area: guia;
-    }
-    .link-escuchamos {
-      grid-area: escuchanos;
-    }
-    .footer-links {
-      display: grid;
-      grid-template-columns: auto auto auto;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: "redes redes redes" "nosotros guia escuchanos";
-    }
-  }
-  @media (max-width: 750px) {
-    .footer-links {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .link-redes {
-      grid-area: redes;
-    }
-    .link-nosotros {
-      grid-area: nosotros;
-    }
-    .link-guia {
-      grid-area: guia;
-    }
-    .link-escuchamos {
-      grid-area: escuchamos;
-    }
-    .footer-links {
-      display: grid;
-      grid-template-columns: auto auto auto auto;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: "redes redes redes redes" "nosotros nosotros nosotros nosotros" "guia guia guia guia" "escuchamos escuchamos escuchamos escuchamos";
-    }
-  }
+
