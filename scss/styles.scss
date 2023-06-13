@@ -201,7 +201,7 @@
     gap: 5rem;
     row-gap: 20rem;
     grid-auto-rows: 22rem;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); /* Esta linea reemplaza algunas medias queries */
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); /* Esta linea reemplaza algunas medias queries */
     justify-content: center;
     padding-bottom: 100px;
   }
@@ -342,6 +342,12 @@
   /* ::::::::::::DESAYUNOS:::::::: */
   /* ::::::::::::::::::::::::::::: */
   /* ..con boostrap.. */
+  .container-carousel {
+    @media (max-width:700px) {
+      padding: 0 50px;
+    }
+  }
+
   .img-area img {
     display: inline-block;
     position: relative;
@@ -440,9 +446,30 @@
     }
   }
   /* ..sin boostrap.. */
+
+  .bg-white {
+    background-color:#fff;
+    border-radius: 20px;
+    margin-top: 100px;
+  }
+
   .delivery {
     padding-top: 100px;
     justify-content: center;
+    .delivery-img-cont{
+      display: flex;
+      align-items: center;
+      text-align: left;
+      gap: 200px;
+      width: 100%;
+      flex-basis: min-content;
+      img {
+        height: 300px;
+        width: 300px;
+
+      }
+      
+    }
   }
   
   main .delivery .delivery-img,
