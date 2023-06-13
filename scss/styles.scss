@@ -325,23 +325,13 @@
     height: 40px;
     width: 250px;
     border-style: none;
-    /* position: absolute;
-    left: 80%;
-    top: 100%; */
   }
   
   main .cardFood p:nth-child(3) {
     font-size: $xl;
-    /*  position: absolute;
-     left: 10%;
-     top: 100%; */
   }
   
-  /* 
-  main  .cardFood div button,
-  main  .cardFood p:nth-child(3){
-      margin-top: 4rem;
-  } */
+
   main .cardFood div p button:hover,
   main .cardFood div button:hover {
     font-weight: bold;
@@ -528,12 +518,19 @@
     place-items: center;
     /* background-color: $secundary-b; */
     background-image: url("../assets/img/fondo-registro-m.jpg");
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
   
   .form-container {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    width: 300px;
+    /* width: 300px; */
+    @media (min-width:500px) {
+      width:300px;
+    }
   }
   
   .title__register {
@@ -602,7 +599,6 @@
 
   /* :::::MY ORDER::: */
   .product-detail {
-    padding: 24px;
     box-sizing: border-box;
   }
   
@@ -663,7 +659,7 @@
     height: 70px;
     border-radius: 20px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   
   .shopping-cart {
@@ -688,6 +684,9 @@
   .shopping-cart p:nth-child(3) {
     font-size: $md;
     font-weight: bold;
+    @media (max-width:380) {
+      font-size: $xs;
+    }
   }
   
   .img-text .primary-button {
@@ -704,11 +703,15 @@
     align-items: center;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
-   /*  gap: 16px; */
+    gap: 16px;
    gap:50px;
     margin: 16px;
     @media (max-width:1500px) {
       grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      gap: 30px; 
+    }
+    @media (max-width:400px) {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       gap: 30px; 
     }
   }
@@ -719,9 +722,18 @@
   }
   
   .grid-row .content-padding {
-    padding: 5% 15%;
     display: flex;
     gap: 30px;
+    
+    div {
+      width: 100%;
+      input {
+        width: 100%;
+      }
+    }
+    @media (max-width:1062px) {
+      flex-direction: column;
+    }
   }
   
   .direction .top-30 {
@@ -733,10 +745,6 @@
     border-radius: 30px;
   }
   
-  .grid-row .top-30 .send-button {
-    width: 100px;
-  }
-  
   button {
     font-size: 16px;
   }
@@ -744,5 +752,11 @@
   #map {
     height: 400px;
     width: 100%;
-  }  
+  } 
+  
+ iframe {
+  padding-top: 20px;
+  width: 100%;
+  height: 380px;
+ }
   

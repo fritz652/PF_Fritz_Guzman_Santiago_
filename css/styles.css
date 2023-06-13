@@ -38,6 +38,21 @@ h2 {
 p {
   font-size: 20px;
 }
+@media (max-width: 800px) {
+  p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 700px) {
+  p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 380px) {
+  p {
+    font-size: 12px;
+  }
+}
 
 header {
   height: 100px;
@@ -692,23 +707,12 @@ main .cardFood div button {
   height: 40px;
   width: 250px;
   border-style: none;
-  /* position: absolute;
-  left: 80%;
-  top: 100%; */
 }
 
 main .cardFood p:nth-child(3) {
   font-size: 35px;
-  /*  position: absolute;
-   left: 10%;
-   top: 100%; */
 }
 
-/* 
-main  .cardFood div button,
-main  .cardFood p:nth-child(3){
-    margin-top: 4rem;
-} */
 main .cardFood div p button:hover,
 main .cardFood div button:hover {
   font-weight: bold;
@@ -896,12 +900,21 @@ main .contactenos .contactenos-img {
   place-items: center;
   /* background-color: $secundary-b; */
   background-image: url("../assets/img/fondo-registro-m.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .form-container {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  width: 300px;
+  /* width: 300px; */
+}
+@media (min-width: 500px) {
+  .form-container {
+    width: 300px;
+  }
 }
 
 .title__register {
@@ -970,7 +983,6 @@ main .contactenos .contactenos-img {
 
 /* :::::MY ORDER::: */
 .product-detail {
-  padding: 24px;
   box-sizing: border-box;
 }
 
@@ -1057,6 +1069,11 @@ main .contactenos .contactenos-img {
   font-size: 16px;
   font-weight: bold;
 }
+@media (max-width: 380) {
+  .shopping-cart p:nth-child(3) {
+    font-size: 12px;
+  }
+}
 
 .img-text .primary-button {
   width: 80%;
@@ -1072,13 +1089,19 @@ main .contactenos .contactenos-img {
   align-items: center;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
-  /*  gap: 16px; */
+  gap: 16px;
   gap: 50px;
   margin: 16px;
 }
 @media (max-width: 1500px) {
   .main-shopping {
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .main-shopping {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 30px;
   }
 }
@@ -1089,9 +1112,19 @@ main .contactenos .contactenos-img {
 }
 
 .grid-row .content-padding {
-  padding: 5% 15%;
   display: flex;
   gap: 30px;
+}
+.grid-row .content-padding div {
+  width: 100%;
+}
+.grid-row .content-padding div input {
+  width: 100%;
+}
+@media (max-width: 1062px) {
+  .grid-row .content-padding {
+    flex-direction: column;
+  }
 }
 
 .direction .top-30 {
@@ -1103,10 +1136,6 @@ main .contactenos .contactenos-img {
   border-radius: 30px;
 }
 
-.grid-row .top-30 .send-button {
-  width: 100px;
-}
-
 button {
   font-size: 16px;
 }
@@ -1114,4 +1143,10 @@ button {
 #map {
   height: 400px;
   width: 100%;
+}
+
+iframe {
+  padding-top: 20px;
+  width: 100%;
+  height: 380px;
 }/*# sourceMappingURL=styles.css.map */

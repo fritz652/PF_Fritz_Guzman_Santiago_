@@ -35,4 +35,13 @@
   
   p {
     font-size: $lg;
+    @media (max-width:800px) {
+      font-size: $md;
+    }
+    @media (max-width:700px) {
+      font-size: $sm;
+    }
+    @media (max-width:380px) {
+      font-size: $xs;
+    }
   }
