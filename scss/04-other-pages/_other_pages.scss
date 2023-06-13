@@ -1,4 +1,10 @@
 
+.construction {
+    margin: 0 20%;
+    background-image: url("../../assets/img/SITIO-EN-CONSTRUCCION.jpg");
+    height: 500px;
+}
+
 
 .flex-colum{
     display: flex;
@@ -7,19 +13,38 @@
     gap: 10px;
 
 }
-    .main{
 
+
+main{
         /*..... nosotros.... */
-        .banner {
-            .banner-content {
-                background-image: url("../../assets/img/cocinando.jpg");
+    .banner {
+        position: relative;
+        max-width: 100%;
+        margin: 0 auto;
+
+        .banner__content {
+            position: absolute;
+            bottom: 0;
+            background: rgb(0, 0,0);
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+            width: 100%;
+            padding: 40px 0;
+            h1 {
+                justify-content: left;
+                padding: 0 50px;
+            }
+            p {
+                justify-content: left;
+                text-align: left;
+                padding: 0 50px;
             }
         }
-        section {
-            h2 {
-                background-color: red;
-            }
+        img {
+            width: 100%;
         }
+    }
+
         .four_consejos {
             display: grid;
             grid-template-columns: 50% 50%;
@@ -43,7 +68,6 @@
             }
 
         }
-    }
-
+}
 
 

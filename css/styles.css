@@ -27,7 +27,7 @@ h1 {
   justify-content: center;
   text-align: center;
   font-size: 3rem;
-  background-color: rgba(242, 242, 242, 0.9490196078);
+  /* background-color: $fondo; */
 }
 
 h2 {
@@ -164,6 +164,12 @@ header .menu .hide-menu {
   }
 }
 
+.construction {
+  margin: 0 20%;
+  background-image: url("../../assets/img/SITIO-EN-CONSTRUCCION.jpg");
+  height: 500px;
+}
+
 .flex-colum {
   display: flex;
   justify-content: center;
@@ -171,31 +177,51 @@ header .menu .hide-menu {
   gap: 10px;
 }
 
-.main {
+main {
   /*..... nosotros.... */
 }
-.main .banner .banner-content {
-  background-image: url("../../assets/img/cocinando.jpg");
+main .banner {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
 }
-.main section h2 {
-  background-color: red;
+main .banner .banner__content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 40px 0;
 }
-.main .four_consejos {
+main .banner .banner__content h1 {
+  justify-content: left;
+  padding: 0 50px;
+}
+main .banner .banner__content p {
+  justify-content: left;
+  text-align: left;
+  padding: 0 50px;
+}
+main .banner img {
+  width: 100%;
+}
+main .four_consejos {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 100px 100px;
   grid-template-areas: "item-one item-two" "item-three item-four";
 }
-.main .four_consejos .item-one {
+main .four_consejos .item-one {
   grid-area: item-one;
 }
-.main .four_consejos .item-two {
+main .four_consejos .item-two {
   grid-area: item-two;
 }
-.main .four_consejos .item-three {
+main .four_consejos .item-three {
   grid-area: item-three;
 }
-.main .four_consejos .item-four {
+main .four_consejos .item-four {
   grid-area: item-four;
 }
 
