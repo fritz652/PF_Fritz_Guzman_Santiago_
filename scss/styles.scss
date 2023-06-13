@@ -42,9 +42,10 @@
                 font-size: 45px;
             }
             @media (max-width:567px) {
-                font-size: 40px;
+                font-size: 25px;
                 white-space: pre-line;
                 width: 100%;
+                line-height:30px ;
             }
           }
 
@@ -77,7 +78,7 @@
           img {
             width: 100%;
             @media (max-width:992px) {
-              width: 500px;
+              width: 400px;
             }
             @media (max-width:768px) {
                 width: 90%;
@@ -110,22 +111,16 @@
     }
 }
 
-/* ::::::::::::: FOOTER  ::::::::::::::: */
-  footer {
-
-  }
-
-
   /* .........Main: secund-section-index.......... */
   .secund-section-index {
-    padding: 100px 100px 10px;
+    padding: 100px 0px 10px;
     display: flex;
     justify-content: space-between;
     gap: 45px;
     
     .info-1 {
-      width: 300px;
-      padding: 25px;
+      width: 250px;
+      padding: 20px;
       text-align: center;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       border-radius: 20px;
@@ -222,28 +217,27 @@
     justify-content: center;
     text-align: center;
     gap: 10%;
+    @media (max-width:620px) {
+      flex-direction: column;
+      row-gap: 50px;
+    }
   }
   
-  main .nosotros .chefs div:nth-child(1) {
-    background-image: url("../assets/img/chef-1.png");
-  }
-  
-  main .nosotros .chefs div:nth-child(2) {
-    background-image: url("../assets/img/chef-2.png");
-  }
-  
-  main .nosotros .chefs div:nth-child(3) {
-    background-image: url("../assets/img/chef-3.png");
-  }
-  
-  main .nosotros .chefs div:nth-child(1),
-  main .nosotros .chefs div:nth-child(2),
-  main .nosotros .chefs div:nth-child(3) {
-    padding: 10%;
-    background-size: 100%;
-    background-repeat: no-repeat;
+  main .nosotros .chefs div {
     justify-content: center;
+    img {
+      width: 200px;
+      @media (max-width:800px) {
+        width: 150px;
+      }
+    }
+    p {
+      text-align: center;
+      padding-top: 10px
+    };
   }
+  
+/* :::::: fin de la tercera seccion::::. */
   
   @media (max-width: 768px) {
     .secund-section-index {
@@ -274,7 +268,7 @@
   }
   @media (max-width: 567px) {
     .nosotros-txt h2 {
-      font-size: 40px;
+      font-size: 25px;
       white-space: pre-line;
       width: 100%;
     }
