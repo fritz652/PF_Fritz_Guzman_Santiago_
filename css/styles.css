@@ -723,9 +723,27 @@ main .cardFood div button:hover {
 /* ::::::::::::DESAYUNOS:::::::: */
 /* ::::::::::::::::::::::::::::: */
 /* ..con boostrap.. */
+.container-carousel {
+  /* @media (max-width:400px) {
+    padding: 0 180px;
+  } */
+}
 @media (max-width: 700px) {
   .container-carousel {
-    padding: 0 50px;
+    /* padding: 0 50px; */
+    margin: 0 50px;
+  }
+}
+@media (max-width: 580px) {
+  .container-carousel {
+    /* padding: 0 100px; */
+    margin: 0 100px;
+  }
+}
+@media (max-width: 460px) {
+  .container-carousel {
+    /* padding: 0 130px; */
+    margin: 0 130px;
   }
 }
 
@@ -832,12 +850,10 @@ main .cardFood div button:hover {
   justify-content: center;
 }
 
-.bg-white {
-  background-color: #fff;
+/* .bg-white {
   border-radius: 20px;
-  margin-top: 100px;
-}
-
+  margin-top:100px;
+} */
 .delivery {
   padding: 50px 0;
   justify-content: center;
@@ -856,15 +872,14 @@ main .cardFood div button:hover {
   width: 300px;
 }
 
-main .delivery .delivery-img,
-main .delivery .delivery-contenido {
-  height: 300px;
-  width: 500px;
-  display: grid;
-  align-items: center;
-  text-align: left;
-}
-
+/*  .delivery-img,
+ .delivery-contenido {
+    height: 300px;
+    width: 500px;
+    display: grid;
+    align-items: center;
+    text-align: left;
+  } */
 main .delivery .delivery-img {
   background-image: url("../assets/img/delivery-gratis-desayuno.png");
   background-repeat: no-repeat round;
@@ -916,6 +931,72 @@ main .contactenos .contactenos-img {
 .delivery h2 {
   font-size: 32px;
   line-height: 40px;
+}
+
+.reco-a {
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: 100px;
+  /* @media (max-width:580px) {
+    padding: 100px 100px;
+  }
+  @media (max-width:460px) {
+    padding: 100px 150px;
+  }
+  @media (max-width:400px) {
+    padding: 100px 180px;
+  } */
+}
+@media (max-width: 700px) {
+  .reco-a {
+    margin: 100px 50px;
+  }
+}
+
+.card-hoy {
+  background-color: #fff;
+  margin: 100px 50px;
+  border-radius: 20px;
+  padding: 100px;
+}
+.card-hoy .grid-p2 {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 700px) {
+  .card-hoy .grid-p2 {
+    flex-direction: row;
+  }
+}
+.card-hoy .grid-p2 .img-co img {
+  width: 300px;
+  height: 300px;
+}
+@media (max-width: 700px) {
+  .card-hoy .grid-p2 .img-co img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 700px) {
+  .card-hoy {
+    margin: 100px 100px;
+  }
+}
+@media (max-width: 580px) {
+  .card-hoy {
+    margin: 100px 120px;
+  }
+}
+@media (max-width: 460px) {
+  .card-hoy {
+    padding: 100px 130px;
+  }
+}
+@media (max-width: 400px) {
+  .card-hoy {
+    padding: 100px 180px;
+  }
 }
 
 /* :::::::::::::::REGISTRO::::::::::::: */
