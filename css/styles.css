@@ -827,6 +827,11 @@ main .cardFood div button:hover {
   }
 }
 /* ..sin boostrap.. */
+.container {
+  display: grid;
+  justify-content: center;
+}
+
 .bg-white {
   background-color: #fff;
   border-radius: 20px;
@@ -834,8 +839,9 @@ main .cardFood div button:hover {
 }
 
 .delivery {
-  padding-top: 100px;
+  padding: 50px 0;
   justify-content: center;
+  max-width: 1000px;
 }
 .delivery .delivery-img-cont {
   display: flex;
