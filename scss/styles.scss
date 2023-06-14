@@ -342,25 +342,6 @@
   /* ::::::::::::DESAYUNOS:::::::: */
   /* ::::::::::::::::::::::::::::: */
   /* ..con boostrap.. */
-  .container-carousel {
-    @media (max-width:700px) {
-      /* padding: 0 50px; */
-      margin: 0 50px;
-    }
-    @media (max-width:580px) {
-      /* padding: 0 100px; */
-      margin: 0 100px;
-    }
-    @media (max-width:460px) {
-      /* padding: 0 130px; */
-      margin: 0 130px;
-    }
-    /* @media (max-width:400px) {
-      padding: 0 180px;
-    } */
-    
-  }
-
   .img-area img {
     display: inline-block;
     position: relative;
@@ -460,11 +441,13 @@
   }
   /* ..sin boostrap.. */
 
-  .container{
-    display: grid;
+  .container-noboot{
+    /* display: grid; */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
   }
-  /* .bg-white {
+/*   .bg-white {
     border-radius: 20px;
     margin-top:100px;
   } */
@@ -570,12 +553,14 @@
 
 .card-hoy {
   background-color: #fff;
-  margin:100px 50px;
+  margin:100px 0px;
   border-radius: 20px;
   padding: 100px;
+
   .grid-p2 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     @media (min-width:700px) {
       flex-direction: row;
     }
@@ -589,19 +574,22 @@
         }
       }
     }
+    .txt-grid-p2 {
+      margin: 10%;
+    }
   }
   @media (max-width:700px) {
-    margin: 100px 100px;
+    margin: 100px 0px;
   }
   @media (max-width:580px) {
-    margin: 100px 120px;
+    margin: 100px 0px;
   }
-  @media (max-width:460px) {
+/*   @media (max-width:460px) {
     padding: 100px 130px;
   }
   @media (max-width:400px) {
       padding: 100px 180px;
-  }
+  } */
 }
 
 
