@@ -936,12 +936,9 @@ main .contactenos .contactenos-img {
   margin: 100px 0px;
   border-radius: 20px;
   padding: 100px;
-  /*   @media (max-width:460px) {
-      padding: 100px 130px;
-    }
-    @media (max-width:400px) {
-        padding: 100px 180px;
-    } */
+  /*  @media (max-width:400px) {
+       padding: 100px 180px;
+   } */
 }
 .card-hoy .grid-p2 {
   display: flex;
@@ -974,6 +971,11 @@ main .contactenos .contactenos-img {
 @media (max-width: 580px) {
   .card-hoy {
     margin: 100px 0px;
+  }
+}
+@media (max-width: 400px) {
+  .card-hoy {
+    padding: 100px 0;
   }
 }
 
