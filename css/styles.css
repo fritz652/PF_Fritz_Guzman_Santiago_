@@ -860,6 +860,7 @@ main .cardFood div button:hover {
   gap: 200px;
   width: 100%;
   flex-basis: min-content;
+  justify-content: center;
 }
 .delivery .delivery-img img {
   height: 300px;
@@ -877,6 +878,7 @@ main .cardFood div button:hover {
 @media (max-width: 500px) {
   .delivery .delivery-contenido {
     width: 100%;
+    justify-content: center;
   }
 }
 
