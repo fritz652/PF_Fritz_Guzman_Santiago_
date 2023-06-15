@@ -1307,4 +1307,28 @@ iframe {
   padding-top: 20px;
   width: 100%;
   height: 380px;
+}
+
+/* ....section menu-gr........ */
+.menu-gr {
+  padding-top: 150px;
+  display: grid;
+  justify-content: center;
+  gap: 30px;
+}
+.menu-gr .menuItem {
+  display: flex;
+  justify-content: center;
+  min-width: 300px;
+}
+.menu-gr .menuItem div img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+.menu-gr .menuItem div .txt_menuItem h2 {
+  text-align: right;
+}
+.menu-gr .menuItem div .txt_menuItem p {
+  text-align: right;
 }/*# sourceMappingURL=styles.css.map */

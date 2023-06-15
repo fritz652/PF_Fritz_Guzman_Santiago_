@@ -892,3 +892,32 @@
   height: 380px;
  }
 
+
+ /* ....section menu-gr........ */
+.menu-gr {
+  padding-top: 150px;
+  display: grid;
+  
+  justify-content: center;
+  gap: 30px;
+  .menuItem {
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+    div {
+      img {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+      }
+      .txt_menuItem{
+        h2 {
+          text-align: right;
+        }
+        p {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
