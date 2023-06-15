@@ -896,27 +896,32 @@
  /* ....section menu-gr........ */
 .menu-gr {
   padding-top: 150px;
-  display: grid;
-  
+  display: flex;
   justify-content: center;
   gap: 30px;
+  @media (max-width:990px) {
+    flex-direction: column;
+  }
   .menuItem {
     display: flex;
     justify-content: center;
     min-width: 300px;
+    gap: 30px;
     div {
       img {
         border-radius: 50%;
         width: 80px;
         height: 80px;
       }
-      .txt_menuItem{
-        h2 {
-          text-align: right;
-        }
-        p {
-          text-align: right;
-        }
+    }
+    .txt_menuItem {
+      display: flex;
+      flex-direction: column;
+      h2 {
+        text-align: left;
+      }
+      p {
+        text-align: left;
       }
     }
   }

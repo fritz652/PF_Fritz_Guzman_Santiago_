@@ -21,7 +21,6 @@ main{
         position: relative;
         max-width: 100%;
         margin: 0 auto;
-
         .banner__content {
             position: absolute;
             bottom: 0;
@@ -47,8 +46,8 @@ main{
 
     /* Nosotros fotos */
     .history{
-        /* color: $white; */
-        background-color:$secundary-b;
+        color: $white;
+        background-color:$black;
         padding: 100px;
         h2 {
             font-size: 30px;
@@ -65,10 +64,9 @@ main{
         }
     }
     .row-nosotros {
-        background-color: $secundary-b;
+        /* background-color: $secundary-b; */
         display: flex;
         flex-wrap: wrap;
-        padding:  10px;
         justify-content: center;
         .column-nosotros {
             flex: 25%;
