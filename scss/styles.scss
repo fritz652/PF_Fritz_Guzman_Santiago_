@@ -453,10 +453,10 @@
   } */
 
   .delivery {
-    padding: 50px 0;
+    padding: 100px;
     justify-content: center;
-    max-width: 1000px;
-    .delivery-img-cont{
+    align-items: center;
+    .delivery-img{
       display: flex;
       align-items: center;
       text-align: left;
@@ -466,9 +466,18 @@
       img {
         height: 300px;
         width: 300px;
-
+        @media (max-width:530px) {
+          height: 200px;
+          width: 200px;
+        }
       }
       
+    }
+    .delivery-contenido {
+      display: flex;
+      @media (max-width:500px) {
+        width: 100%;
+      }
     }
   }
   
@@ -481,10 +490,10 @@
     text-align: left;
   } */
   
-  main .delivery .delivery-img {
+ /*  main .delivery .delivery-img {
     background-image: url("../assets/img/delivery-gratis-desayuno.png");
     background-repeat: no-repeat round;
-  }
+  } */
   
   .delivery h2 {
     font-size: 32px;
@@ -508,25 +517,58 @@
   
   .center-rigth {
     padding-right: 0;
+    @media (max-width:1199px) {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
     h2 {
       text-align: center;
       padding-bottom: 30px;
     }
-    .info-1{width: 300px;
+    .info-1{
+      width: 300px;
       padding: 25px;
       text-align: center;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       border-radius: 20px;
+      @media (max-width:1199px) {
+        width: 100%;
+      }
+      @media (max-width:700px) {
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+      }
       img {
         width: 35px;
       }
     }
   }
   
-  main .contactenos .contactenos-img {
-    background-image: url("../assets/img/contactanos-gratis.png");
-    background-repeat: no-repeat round;
+.contactenos {
+  .contactenos-img {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 200px;
+    width: 100%;
+    flex-basis: min-content;
+    img {
+      width: 300px;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    @media (max-width:550px) {
+      width: 200px;
+      height: 200px;
+    }
+    }
   }
+}
+
   
   .delivery h2 {
     font-size: 32px;

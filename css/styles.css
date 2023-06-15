@@ -833,11 +833,11 @@ main .cardFood div button:hover {
     margin-top:100px;
   } */
 .delivery {
-  padding: 50px 0;
+  padding: 100px;
   justify-content: center;
-  max-width: 1000px;
+  align-items: center;
 }
-.delivery .delivery-img-cont {
+.delivery .delivery-img {
   display: flex;
   align-items: center;
   text-align: left;
@@ -845,9 +845,23 @@ main .cardFood div button:hover {
   width: 100%;
   flex-basis: min-content;
 }
-.delivery .delivery-img-cont img {
+.delivery .delivery-img img {
   height: 300px;
   width: 300px;
+}
+@media (max-width: 530px) {
+  .delivery .delivery-img img {
+    height: 200px;
+    width: 200px;
+  }
+}
+.delivery .delivery-contenido {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .delivery .delivery-contenido {
+    width: 100%;
+  }
 }
 
 /*  .delivery-img,
@@ -858,11 +872,10 @@ main .cardFood div button:hover {
     align-items: center;
     text-align: left;
   } */
-main .delivery .delivery-img {
-  background-image: url("../assets/img/delivery-gratis-desayuno.png");
-  background-repeat: no-repeat round;
-}
-
+/*  main .delivery .delivery-img {
+   background-image: url("../assets/img/delivery-gratis-desayuno.png");
+   background-repeat: no-repeat round;
+ } */
 .delivery h2 {
   font-size: 32px;
   line-height: 40px;
@@ -886,6 +899,14 @@ main .contactenos .contactenos-contenido {
 .center-rigth {
   padding-right: 0;
 }
+@media (max-width: 1199px) {
+  .center-rigth {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .center-rigth h2 {
   text-align: center;
   padding-bottom: 30px;
@@ -897,13 +918,42 @@ main .contactenos .contactenos-contenido {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
+@media (max-width: 1199px) {
+  .center-rigth .info-1 {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .center-rigth .info-1 {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .center-rigth .info-1 img {
   width: 35px;
 }
 
-main .contactenos .contactenos-img {
-  background-image: url("../assets/img/contactanos-gratis.png");
-  background-repeat: no-repeat round;
+.contactenos .contactenos-img {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 200px;
+  width: 100%;
+  flex-basis: min-content;
+}
+.contactenos .contactenos-img img {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 550px) {
+  .contactenos .contactenos-img img {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .delivery h2 {
