@@ -617,8 +617,16 @@
         justify-content: center;
       img {
         width: 500px;
+        @media (max-width:1018px) {
+          width:450px; 
+          align-items: center;
+        }
         @media (max-width:970px) {
           width:350px; 
+          align-items: center;
+        }
+        @media (max-width:870px) {
+          width:300px; 
           align-items: center;
         }
         @media (max-width:450px) {
