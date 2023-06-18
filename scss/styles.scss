@@ -807,6 +807,9 @@
     border-radius: 20px;
     -o-object-fit: cover;
     object-fit: cover;
+    @media (max-width:370px) {
+      display: none;
+    }
   }
   
   .shopping-cart {
@@ -825,7 +828,8 @@
   }
   
   .shopping-cart p:nth-child(2) {
-    color: $very-light-pink;
+    color: $black;
+    text-align: left;
   }
   
   .shopping-cart p:nth-child(3) {
@@ -851,13 +855,13 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
     gap: 16px;
-   gap:50px;
+    gap:50px;
     margin: 16px;
     @media (max-width:1500px) {
       grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
       gap: 30px; 
     }
-    @media (max-width:400px) {
+    @media (max-width:500px) {
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       gap: 30px; 
     }

@@ -1217,6 +1217,11 @@ main .contactenos .contactenos-contenido {
   -o-object-fit: cover;
   object-fit: cover;
 }
+@media (max-width: 370px) {
+  .shopping-cart figure img {
+    display: none;
+  }
+}
 
 .shopping-cart {
   display: grid;
@@ -1234,7 +1239,8 @@ main .contactenos .contactenos-contenido {
 }
 
 .shopping-cart p:nth-child(2) {
-  color: #c7c7c7;
+  color: #000;
+  text-align: left;
 }
 
 .shopping-cart p:nth-child(3) {
@@ -1271,7 +1277,7 @@ main .contactenos .contactenos-contenido {
     gap: 30px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .main-shopping {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 30px;
