@@ -599,7 +599,7 @@
   background-color: #fff;
   margin:100px 0px;
   border-radius: 20px;
-  padding: 100px;
+  padding: 10%;
   @media (min-width:700px) {
    padding: 50px;;
   }
@@ -618,13 +618,25 @@
       img {
         width: 500px;
         @media (max-width:970px) {
-          width:350px;
+          width:350px; 
+          align-items: center;
+        }
+        @media (max-width:450px) {
+          width:300px; 
+          align-items: center;
+        }
+        @media (max-width:450px) {
+          width:280px; 
           align-items: center;
         }
       }
     }
     .txt-grid-p2 {
-      margin: 10%;
+      /* margin: 10%; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       a {
         p {
           display: flex;
@@ -642,7 +654,8 @@
     margin: 100px 0px;
   }
   @media (max-width:400px) {
-    padding: 100px 0;
+    /* padding: 100px 0; */
+    padding: 10%;
   }
  /*  @media (max-width:400px) {
       padding: 100px 180px;

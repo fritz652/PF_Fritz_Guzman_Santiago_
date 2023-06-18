@@ -1001,7 +1001,7 @@ main .contactenos .contactenos-contenido {
   background-color: #fff;
   margin: 100px 0px;
   border-radius: 20px;
-  padding: 100px;
+  padding: 10%;
   /*  @media (max-width:400px) {
        padding: 100px 180px;
    } */
@@ -1035,8 +1035,24 @@ main .contactenos .contactenos-contenido {
     align-items: center;
   }
 }
+@media (max-width: 450px) {
+  .card-hoy .grid-p2 .img-co img {
+    width: 300px;
+    align-items: center;
+  }
+}
+@media (max-width: 450px) {
+  .card-hoy .grid-p2 .img-co img {
+    width: 280px;
+    align-items: center;
+  }
+}
 .card-hoy .grid-p2 .txt-grid-p2 {
-  margin: 10%;
+  /* margin: 10%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .card-hoy .grid-p2 .txt-grid-p2 a p {
   display: flex;
@@ -1056,7 +1072,8 @@ main .contactenos .contactenos-contenido {
 }
 @media (max-width: 400px) {
   .card-hoy {
-    padding: 100px 0;
+    /* padding: 100px 0; */
+    padding: 10%;
   }
 }
 
